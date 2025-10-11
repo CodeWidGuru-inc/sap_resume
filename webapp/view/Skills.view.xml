@@ -4,12 +4,32 @@
   xmlns="sap.m"
   xmlns:grid="sap.ui.layout.cssgrid"
 	xmlns:f="sap.f">
-	<Panel id="SkillGridList" backgroundDesign="Transparent">
+	<Panel id="techSkillList" backgroundDesign="Transparent" headerText="Technical Skills" expandable="true" expanded="true" expandAnimation="true">
 		<f:GridList
-			id="gridList"
-			headerText="Technical Skills"
-      class=""
-			items="{skills>/}">
+			id="gridtechList"
+      class="skillHeaderTextClass"
+			items="{techSkills>/}">
+			<f:customLayout>
+				<grid:GridBoxLayout boxMinWidth="12rem"/>
+			</f:customLayout>
+
+			<f:GridListItem>
+				<VBox class="sapUiSmallMargin">
+					<layoutData>
+						<FlexItemData growFactor="1" shrinkFactor="0" />
+					</layoutData>
+					<Title text="{techSkills>name}" wrapping="true" />
+					<Label text="{techSkills>level}" wrapping="true" />
+				</VBox>
+			</f:GridListItem>
+		</f:GridList>
+  </Panel>
+
+  <Panel  id="modSkillList" backgroundDesign="Transparent" headerText="Modules" expandable="true" expanded="true" expandAnimation="true">
+    <f:GridList
+			id="gridmodList"
+      class="skillHeaderTextClass"
+			items="{modSkills>/}">
 			<f:customLayout>
 				<grid:GridBoxLayout boxMinWidth="10rem"/>
 			</f:customLayout>
@@ -19,10 +39,32 @@
 					<layoutData>
 						<FlexItemData growFactor="1" shrinkFactor="0" />
 					</layoutData>
-					<Title text="{skills>name}" wrapping="true" />
-					<Label text="{skills>level}" wrapping="true" />
+					<Title text="{modSkills>name}" wrapping="true" />
+					<Label text="{modSkills>level}" wrapping="true" />
+				</VBox>
+			</f:GridListItem>
+		</f:GridList>
+  </Panel>
+
+  <Panel  id="softSkillList" backgroundDesign="Transparent" headerText="Power Skills" expandable="true" expanded="true" expandAnimation="true">
+    <f:GridList
+			id="gridsoftList"
+      class="skillHeaderTextClass"
+			items="{softSkills>/}">
+			<f:customLayout>
+				<grid:GridBoxLayout boxMinWidth="10rem"/>
+			</f:customLayout>
+
+			<f:GridListItem>
+				<VBox class="sapUiSmallMargin">
+					<layoutData>
+						<FlexItemData growFactor="1" shrinkFactor="0" />
+					</layoutData>
+					<Title text="{softSkills>name}" wrapping="true" />
+					<!-- <Label text="{softSkills>level}" wrapping="true" /> -->
 				</VBox>
 			</f:GridListItem>
 		</f:GridList>
 	</Panel>
+
 </mvc:View>

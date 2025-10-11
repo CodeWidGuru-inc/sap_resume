@@ -12,7 +12,20 @@ sap.ui.define([
     init: function () {
       UIComponent.prototype.init.apply(this, arguments);
       var oSkills = new JSONModel("model/skills.json");
-      this.setModel(oSkills, "skills");
+      oSkills.attachRequestCompleted(function() {
+      var aSkills = oSkills.getData(); // This is your array
+
+      // Filter arrays for each skill type
+      var aTech = aSkills.filter(function(item) { return item.type === "technical"; });
+      var aMod = aSkills.filter(function(item) { return item.type === "module"; });
+      var aSoft = aSkills.filter(function(item) { return item.type === "soft"; });
+
+      // Set filtered models for each GridList
+      this.setModel(new sap.ui.model.json.JSONModel(aTech), "techSkills");
+      this.setModel(new sap.ui.model.json.JSONModel(aMod), "modSkills");
+      this.setModel(new sap.ui.model.json.JSONModel(aSoft), "softSkills");
+      }.bind(this));
+      
       var oProjects = new JSONModel("model/projects.json");
       this.setModel(oProjects, "projects");
       var oExperience = new JSONModel("model/experience.json");

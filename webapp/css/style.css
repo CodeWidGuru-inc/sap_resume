@@ -11,3 +11,9 @@ body {
   content: "\e02f"; /* Moon icon (sap-icon://bed) */
   font-family: "SAP-icons";
 }
+
+.skillHeaderTextClass {
+        font-size: 1px;
+        font-weight: bolder;
+        text-align: center;
+    }
