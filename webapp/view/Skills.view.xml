@@ -1,11 +1,28 @@
 <mvc:View
   controllerName="SapDevPortfolio.controller.Skills"
   xmlns:mvc="sap.ui.core.mvc"
-  xmlns="sap.m">
-  <VBox>
-    <Title text="{i18n>skillsTitle}"/>
-    <List items="{skills>/}">
-      <StandardListItem title="{skills>name}" description="{skills>level}"/>
-    </List>
-  </VBox>
+  xmlns="sap.m"
+  xmlns:grid="sap.ui.layout.cssgrid"
+	xmlns:f="sap.f">
+	<Panel id="SkillGridList" backgroundDesign="Transparent">
+		<f:GridList
+			id="gridList"
+			headerText="Technical Skills"
+      class=""
+			items="{skills>/}">
+			<f:customLayout>
+				<grid:GridBoxLayout boxMinWidth="10rem"/>
+			</f:customLayout>
+
+			<f:GridListItem>
+				<VBox class="sapUiSmallMargin">
+					<layoutData>
+						<FlexItemData growFactor="1" shrinkFactor="0" />
+					</layoutData>
+					<Title text="{skills>name}" wrapping="true" />
+					<Label text="{skills>level}" wrapping="true" />
+				</VBox>
+			</f:GridListItem>
+		</f:GridList>
+	</Panel>
 </mvc:View>

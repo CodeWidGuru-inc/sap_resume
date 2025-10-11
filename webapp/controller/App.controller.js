@@ -14,6 +14,10 @@ sap.ui.define([
       var bPressed = oEvent.getParameter("state");
       var sTheme = bPressed ? "sap_horizon" : "sap_horizon_dark";
       sap.ui.getCore().applyTheme(sTheme);
-    }
+    },
+    onLinkedInPress: function() {
+      var sUrl = "https://www.linkedin.com/in/guruteja-chilukoti";
+      window.open(sUrl, "_blank");
+    },
   });
 });

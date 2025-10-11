@@ -1,9 +1,15 @@
 [
-  { "name": "SAPUI5 / Fiori", "level": "Expert" },
-  { "name": "ABAP RESTful Programming Model", "level": "Advanced" },
-  { "name": "CAP (Cloud Application Programming)", "level": "Advanced" },
-  { "name": "Node.js", "level": "Advanced" },
-  { "name": "OData / CDS", "level": "Expert" },
+  { "name": "SAPUI5 / Fiori", "level": "Intermediate" },
+  { "name": "ABAP on S4HANA", "level": "Advanced" },
+  { "name": "RICEF & OOPS", "level": "Expert" },
+  { "name": "ABAP RESTful Programming Model", "level": "Intermediate" },
+  { "name": "CAP", "level": "Beginner" },
+  { "name": "Node.js", "level": "Intermediate" },
+  { "name": "JavaScript", "level": "Intermediate" },
+  { "name": "HTML5 & CSS", "level": "Advanced" },
+  { "name": "GIT", "level": "Intermediate" },
+  { "name": "SQL", "level": "Advanced" },
+  { "name": "OData & CDS", "level": "Advanced" },
   { "name": "SAP BTP", "level": "Intermediate" },
-  { "name": "CI/CD (Jenkins, GitHub Actions)", "level": "Intermediate" }
+  { "name": "CI/CD", "level": "Beginner" }
 ]

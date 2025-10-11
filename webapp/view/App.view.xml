@@ -6,17 +6,22 @@
     <pages>
       <Page title="{i18n>appTitle}">
         <headerContent >
-          <Switch customTextOn="🌞" customTextOff="🌙" state="true" change="onToggleTheme" >
-            <layoutData>
-              <FlexItemData growFactor="1" />
-            </layoutData>
-          </Switch>
+          <Switch customTextOn="🌞" customTextOff="🌙" state="true" change="onToggleTheme" ></Switch>
         </headerContent>
         <content>
-          <ObjectHeader title="Your Name" intro="SAP Full Stack Developer" class= "sapUiAlignCenter"/>
+          <ObjectHeader title="Guruteja Chilukoti" >
+              <ObjectAttribute title="Email" text="Guruteja.Chilukoti@gmail.com"/>
+              <ObjectAttribute title="LinkedIn" text="www.linkedin.com/in/guruteja-chilukoti" active="true" press="onLinkedInPress"/>
+              <ObjectAttribute title="Phone"  text="+91 9848022338" />
+              <ObjectAttribute title="Location"  text="Hyderabad, India" />
+          </ObjectHeader>
           <IconTabBar>
             <items>
-              <IconTabFilter text="{i18n>skillsTitle}" icon="sap-icon://badge" key="skills"/>
+              <IconTabFilter text="{i18n>skillsTitle}" icon="sap-icon://badge" key="skills">
+                <content>
+                  <mvc:XMLView viewName="SapDevPortfolio.view.Skills"/>
+                </content>
+              </IconTabFilter>
               <IconTabFilter text="{i18n>projectsTitle}" icon="sap-icon://course-book" key="projects"/>
               <IconTabFilter text="{i18n>experienceTitle}" icon="sap-icon://customer-history" key="experience"/>
               <IconTabFilter text="{i18n>contactTitle}" icon="sap-icon://business-card" key="contact"/>

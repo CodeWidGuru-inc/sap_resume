@@ -2,9 +2,5 @@ sap.ui.define([
   "sap/ui/model/json/JSONModel"
 ], function (JSONModel) {
   "use strict";
-  return {
-    createSkillsModel: function () {
-      return new JSONModel("model/skills.json");
-    }
-  };
+  return {};
 });
