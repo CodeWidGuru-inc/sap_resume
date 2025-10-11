@@ -1,7 +1,7 @@
 [
   { "type": "technical", "name": "SAPUI5 / Fiori", "level": "Intermediate" },
   { "type": "technical", "name": "ABAP on S4HANA", "level": "Advanced" },
-  { "type": "technical", "name": "RICEF & OOPS", "level": "Expert" },
+  { "type": "technical", "name": "RICEF & OOPS", "level": "Advanced" },
   { "type": "technical", "name": "ABAP RESTful Programming Model", "level": "Intermediate" },
   { "type": "technical", "name": "CAPM", "level": "Beginner" },
   { "type": "technical", "name": "Node.js", "level": "Intermediate" },

@@ -11,6 +11,7 @@ sap.ui.define([
     },
     init: function () {
       UIComponent.prototype.init.apply(this, arguments);
+      //Begin-------------Skills Model---------------
       var oSkills = new JSONModel("model/skills.json");
       oSkills.attachRequestCompleted(function() {
       var aSkills = oSkills.getData(); // This is your array
@@ -25,9 +26,10 @@ sap.ui.define([
       this.setModel(new sap.ui.model.json.JSONModel(aMod), "modSkills");
       this.setModel(new sap.ui.model.json.JSONModel(aSoft), "softSkills");
       }.bind(this));
-      
+      //End---------------Skills Model---------------
       var oProjects = new JSONModel("model/projects.json");
       this.setModel(oProjects, "projects");
+      //Begin-------------Experience Model---------------
       var oExperience = new JSONModel("model/experience.json");
       this.setModel(oExperience, "experience");
       var i18nModel = new ResourceModel({
