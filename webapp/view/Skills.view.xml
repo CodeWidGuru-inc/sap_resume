@@ -1,0 +1,11 @@
+<mvc:View
+  controllerName="SapDevPortfolio.controller.Skills"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m">
+  <VBox>
+    <Title text="{i18n>skillsTitle}"/>
+    <List items="{skills>/}">
+      <StandardListItem title="{skills>name}" description="{skills>level}"/>
+    </List>
+  </VBox>
+</mvc:View>

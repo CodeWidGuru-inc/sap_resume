@@ -1,0 +1,25 @@
+<mvc:View
+  controllerName="SapDevPortfolio.controller.App"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m">
+  <App>
+    <pages>
+      <Page title="{i18n>appTitle}">
+        <content>
+          <ObjectHeader title="Your Name" intro="SAP Full Stack Developer"/>
+          <IconTabBar>
+            <items>
+              <IconTabFilter text="{i18n>skillsTitle}" key="skills"/>
+              <IconTabFilter text="{i18n>projectsTitle}" key="projects"/>
+              <IconTabFilter text="{i18n>experienceTitle}" key="experience"/>
+              <IconTabFilter text="{i18n>contactTitle}" key="contact"/>
+            </items>
+            <content>
+              <!-- Fragments or Views for each tab -->
+            </content>
+          </IconTabBar>
+        </content>
+      </Page>
+    </pages>
+  </App>
+</mvc:View>

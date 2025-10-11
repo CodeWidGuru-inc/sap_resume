@@ -1,0 +1,14 @@
+[
+  {
+    "title": "SAP Fiori Launchpad Extension",
+    "description": "Extended Fiori Launchpad with custom tiles and analytics.",
+    "tech": "SAPUI5, OData, Fiori Elements",
+    "image": "images/project1.png"
+  },
+  {
+    "title": "CAP-based Inventory App",
+    "description": "Built a full-stack inventory management app using CAP and SAPUI5.",
+    "tech": "CAP, Node.js, SAPUI5, CDS",
+    "image": "images/project2.png"
+  }
+]

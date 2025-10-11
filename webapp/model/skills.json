@@ -1,0 +1,9 @@
+[
+  { "name": "SAPUI5 / Fiori", "level": "Expert" },
+  { "name": "ABAP RESTful Programming Model", "level": "Advanced" },
+  { "name": "CAP (Cloud Application Programming)", "level": "Advanced" },
+  { "name": "Node.js", "level": "Advanced" },
+  { "name": "OData / CDS", "level": "Expert" },
+  { "name": "SAP BTP", "level": "Intermediate" },
+  { "name": "CI/CD (Jenkins, GitHub Actions)", "level": "Intermediate" }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "company": "SAP Labs",
+    "role": "Full Stack Developer",
+    "duration": "2022-2025",
+    "details": "Developed scalable SAPUI5 applications and backend services using CAP and ABAP."
+  },
+  {
+    "company": "Microsoft",
+    "role": "SAP Integration Engineer",
+    "duration": "2020-2022",
+    "details": "Integrated SAP systems with Azure cloud using OData and Node.js."
+  }
+]

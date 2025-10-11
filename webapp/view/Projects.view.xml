@@ -1,0 +1,11 @@
+<mvc:View
+  controllerName="SapDevPortfolio.controller.Projects"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m">
+  <VBox>
+    <Title text="{i18n>projectsTitle}"/>
+    <List items="{projects>/}">
+      <StandardListItem title="{projects>title}" description="{projects>tech}" icon="{projects>image}"/>
+    </List>
+  </VBox>
+</mvc:View>

@@ -1,0 +1,11 @@
+<mvc:View
+  controllerName="SapDevPortfolio.controller.Experience"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m">
+  <VBox>
+    <Title text="{i18n>experienceTitle}"/>
+    <List items="{experience>/}">
+      <StandardListItem title="{experience>company}" description="{experience>role} ({experience>duration})"/>
+    </List>
+  </VBox>
+</mvc:View>

@@ -1,0 +1,11 @@
+<mvc:View
+  controllerName="SapDevPortfolio.controller.Contact"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m">
+  <VBox>
+    <Title text="{i18n>contactTitle}"/>
+    <Text text="Email: your.email@example.com"/>
+    <Text text="LinkedIn: linkedin.com/in/yourprofile"/>
+    <Text text="GitHub: github.com/yourusername"/>
+  </VBox>
+</mvc:View>
