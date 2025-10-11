@@ -12,6 +12,7 @@
   { "type": "technical", "name": "OData & CDS", "level": "Advanced" },
   { "type": "technical", "name": "SAP BTP", "level": "Intermediate" },
   { "type": "technical", "name": "CI/CD", "level": "Beginner" },
+  { "type": "technical", "name": "Agile", "level": "Advanced" },
   { "type": "module", "name": "MM", "level": "Advanced" },
   { "type": "module", "name": "SD", "level": "Advanced" },
   { "type": "module", "name": "FI", "level": "Intermediate" },

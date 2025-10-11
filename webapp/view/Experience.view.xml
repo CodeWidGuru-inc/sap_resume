@@ -4,8 +4,25 @@
   xmlns="sap.m">
   <VBox>
     <Title text="{i18n>experienceTitle}"/>
-    <List items="{experience>/}">
-      <StandardListItem title="{experience>company}" description="{experience>role} ({experience>duration})"/>
-    </List>
+      <Panel id="wipro" backgroundDesign="Transparent" headerText="Technical Skills" expandable="true" expanded="true" expandAnimation="true">
+      <f:GridList
+        id="wiproList"
+        class="skillHeaderTextClass"
+        items="{techSkills>/}">
+        <f:customLayout>
+          <grid:GridBoxLayout boxMinWidth="12rem"/>
+        </f:customLayout>
+
+        <f:GridListItem>
+          <VBox class="sapUiSmallMargin">
+            <layoutData>
+              <FlexItemData growFactor="1" shrinkFactor="0" />
+            </layoutData>
+            <Title text="{techSkills>name}" wrapping="true" />
+            <Label text="{techSkills>level}" wrapping="true" />
+          </VBox>
+        </f:GridListItem>
+      </f:GridList>
+    </Panel>
   </VBox>
 </mvc:View>
