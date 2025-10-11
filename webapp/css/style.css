@@ -1,3 +1,13 @@
 body { 
     font-family: "72", Arial, sans-serif; 
 }
+
+.customSwitch.sapMSwtOn .sapMSwtHandle:before {
+  content: "\e065"; /* Sun icon (sap-icon://lightbulb) */
+  font-family: "SAP-icons";
+}
+
+.customSwitch.sapMSwtOff .sapMSwtHandle:before {
+  content: "\e02f"; /* Moon icon (sap-icon://bed) */
+  font-family: "SAP-icons";
+}
