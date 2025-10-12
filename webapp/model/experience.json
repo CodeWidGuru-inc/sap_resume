@@ -1,6 +1,7 @@
 [
-  {
-    "company": "Accenture PLC, Client – Telia Company AB",
+  { "id": "Accenture",
+    "company": "Accenture Solutions Pvt. Ltd.",
+    "client":  "Telia Company AB",
     "role": "Packaged App Development Senior Analyst",
     "duration": "December 2022 - June 2024",
     "Project Description": "Telia Company is a leading Telecommunications Company across the Nordics and Baltic region. It has businesses and services in Networking, Media, Device Sales and Insurance etc. For diversifying and scaling up their horizontal offerings, business was looking for enhancing their existing process with feature addition and newer requirements.",
@@ -29,11 +30,12 @@
                "Coordinating with new joiners for easier onboarding into the project and system environment"
               ]
   },
-  {
-    "company": "Accenture PLC, Client – L’Oreal",
+  { "id": "Accenture",
+    "company": "Accenture Solutions Pvt. Ltd.",
+    "client":  "L’Oreal",
     "role": "Packaged App Development Senior Analyst",
     "duration": "June 2022 – November 2022",
-    "Project Description": "",
+    "Project Description": "L’Oreal has its line of Personal Care and Cosmetic products which it produces and supply under their brand. The business and product data are managed using their custom SAP Fiori /HANA Applications which need to be developed and enhanced as and when requirements arise.",
     "details": ["Designed and implemented CDS views using Associations, joins, Parameters",
                 "Developed and Enhanced Odata service methods as per requirements",
                 "Implemented custom validations and custom error handling messages to be shown in Manage Product Master Fiori App",
@@ -41,8 +43,9 @@
                 "Coordinating with client users and business and proposing technical solution for requirements",
                 "Debugging for analysis, solution proposals and Bug fixes"]
   },
-  {
-    "company": "Infosys Ltd., Client - Unilever PLC",
+  { "id": "Infosys",
+    "company": "Infosys Ltd.", 
+    "client": "Unilever PLC",
     "role": "Technology Analyst",
     "duration": "December 2020 – May 2023",
     "Project Description": "Unilever has products in 3 main areas i.e. Foods & Refreshments (beverages and ice cream), Home Care, and Beauty & Personal Care. Whose R&D data is managed using their customized SAP PLM Fiori apps for recipe, specification and BOMs.",
@@ -59,9 +62,10 @@
                "Creation of custom tables as per client requirements",
                "Coordinated with PLM R&D owners and supply chain as part of Material Life cycle Management team running Data cleansing process for each quarter for removing the unutilized non stock materials, their specifications, recipes and linked BOMs"]
   },
-  {
-    "company": "Infosys Ltd., Client - Bombardier Aviation",
-    "role": "Systems Engineer & Senior Systems Engineer ",
+  { "id": "Infosys",
+    "company": "Infosys Ltd.", 
+    "client": "Bombardier Aviation",
+    "role": "Senior Systems Engineer ",
     "duration": "October 2018 - November 2020",
     "Project Description": "Bombardier Aviation is a commercial aircraft manufacturing subsidiary of Bombardier Inc. During its partnership with AIRBUS for a new Cseries program, they needed their PLM platform with custom enhancements and later with their acquisition of TRIUMPH’s wing program they needed to extend their existing PLM platform to the new wing manufacturing division.",
     "details": ["Worked on various Workbench objects.",

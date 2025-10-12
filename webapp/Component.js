@@ -29,9 +29,26 @@ sap.ui.define([
       //End---------------Skills Model---------------
       var oProjects = new JSONModel("model/projects.json");
       this.setModel(oProjects, "projects");
+
       //Begin-------------Experience Model---------------
       var oExperience = new JSONModel("model/experience.json");
-      this.setModel(oExperience, "experience");
+      oExperience.attachRequestCompleted(function() {
+      var aExperience = oExperience.getData(); // This is your array
+
+      // Filter arrays for each skill type
+      // var aAccenture = aExperience.filter(function(item) { return item.id === "Accenture"; });
+      // var aInfosys = aExperience.filter(function(item) { return item.id === "Infosys"; });
+
+      // Set filtered models for each GridList
+      // this.setModel(new sap.ui.model.json.JSONModel(aAccenture), "Accenture");
+      // this.setModel(new sap.ui.model.json.JSONModel(aInfosys), "Infosys");
+        this.setModel(new sap.ui.model.json.JSONModel(aExperience), "Experience");
+        var details = aExperience.map(function(item) { return {id: item.id, details: item.details} });
+        console.log(details);
+        this.setModel(new sap.ui.model.json.JSONModel(details), "details");
+      }.bind(this));
+
+      //End---------------Experience Model---------------
       var i18nModel = new ResourceModel({
         bundleName: "SapDevPortfolio.i18n.i18n"
       });

@@ -4,12 +4,13 @@
   xmlns="sap.m">
   <App>
     <pages>
-      <Page title="{i18n>appTitle}">
+      <Page title="">
         <headerContent >
+          <Button class="buttonClass" icon="sap-icon://home" text="Home"></Button>
           <Switch customTextOn="🌞" customTextOff="🌙" state="true" change="onToggleTheme" ></Switch>
         </headerContent>
         <content>
-          <ObjectHeader title="Guruteja Chilukoti" >
+          <ObjectHeader id="oh1" responsive="true" fullScreenOptimized="false" intro="SAP Full Stack Developer | ABAP on Cloud /S4HANA | ODATA | CDS | SAP Fiori/UI5 |" title="Guruteja Chilukoti">
               <ObjectAttribute title="Email" text="Guruteja.Chilukoti@gmail.com"/>
               <ObjectAttribute title="LinkedIn" text="www.linkedin.com/in/guruteja-chilukoti" active="true" press="onLinkedInPress"/>
               <ObjectAttribute title="Phone"  text="+91 9848022338" />
@@ -23,9 +24,14 @@
                 </content>
               </IconTabFilter>
               <IconTabFilter text="{i18n>projectsTitle}" icon="sap-icon://course-book" key="projects"/>
-              <IconTabFilter text="{i18n>experienceTitle}" icon="sap-icon://customer-history" key="experience"/>
+              <IconTabFilter text="{i18n>experienceTitle}" icon="sap-icon://customer-history" key="experience">
+                <content>
+                  <mvc:XMLView viewName="SapDevPortfolio.view.Experience"/>
+                </content>
+              </IconTabFilter>
               <IconTabFilter text="{i18n>contactTitle}" icon="sap-icon://business-card" key="contact"/>
             </items>
+            
             <content>
               <!-- Fragments or Views for each tab -->
             </content>
