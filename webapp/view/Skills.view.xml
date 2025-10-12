@@ -25,7 +25,7 @@
 		</f:GridList>
   </Panel>
 
-  <Panel id="modSkillList" backgroundDesign="Transparent" headerText="Modules" expandable="true" expanded="true" expandAnimation="true">
+  <Panel id="modSkillList" backgroundDesign="Transparent" headerText="Modules">
     <f:GridList
 			id="gridmodList"
       class="skillHeaderTextClass"
@@ -46,7 +46,7 @@
 		</f:GridList>
   </Panel>
 
-  <Panel id="softSkillList" backgroundDesign="Transparent" headerText="Power Skills" expandable="true" expanded="true" expandAnimation="true">
+  <Panel id="softSkillList" backgroundDesign="Transparent" headerText="Power Skills" >
     <f:GridList
 			id="gridsoftList"
       class="skillHeaderTextClass"
