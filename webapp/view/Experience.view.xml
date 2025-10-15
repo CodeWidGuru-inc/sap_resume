@@ -30,19 +30,17 @@
         </objPL:sections>
   </objPL:ObjectPageLayout> -->
 <l:ResponsiveSplitter defaultPane="default">
-  <l:PaneContainer resize=".onRootContainerResize">
-  <l:SplitPane requiredParentWidth="600" id="default">
-    <l:layoutData>
-      <l:SplitterLayoutData size="{  }" />
-    </l:layoutData>
-    <Panel height="100%">
+  <l:PaneContainer >
+  <l:SplitPane requiredParentWidth="600" id="default"> 
+
+    <Panel height="100%" width="auto" class="sapUiResponsiveMargin">
       <f:GridList 
         id="AccentureList"
         items="{Experience>/}">
         <f:customLayout>
           <cssgrid:GridBoxLayout xmlns:cssgrid="sap.ui.layout.cssgrid" boxesPerRowConfig="XL1 L1 M1 S1" />
         </f:customLayout>
-        <f:GridListItem >
+        <f:GridListItem type="Active" press="onPress">
           <VBox class="sapUiSmallMargin">
             <layoutData>
               <FlexItemData growFactor="1" shrinkFactor="0" />
@@ -62,21 +60,26 @@
       </f:GridList>
     </Panel>
   </l:SplitPane>     
-  <l:PaneContainer orientation="Vertical">
+  <l:PaneContainer orientation="Vertical" >
 				<l:SplitPane requiredParentWidth="600">
 					<l:layoutData>
 						<l:SplitterLayoutData size="auto"/>
 					</l:layoutData>
-					<Panel headerText="Minimum parent width 600">
-						<VBox>
-							<Text text="LayoutData.size={sizes>/pane2}" />
-							<Select forceSelection="false" selectedKey="1239102"
-								items="{
-									path: '/ProductCollection',
-									sorter: { path: 'Name' }
-								}">
-								<core:Item key="{ProductId}" text="{Name}" />
-							</Select>
+					<Panel stickyHeader="true" height="" headerText="Experience Details" width="auto" class="sapUiResponsiveMargin">
+						<VBox items="{detailsModel>/}" id="fillmedaddy" height="500px" width="auto" class="sapUiSmallMargin">
+							<items>
+                <VBox>
+                  <!-- Main bullet -->
+                  <Text text="{= Array.isArray(${detailsModel>}) ? '' : '• ' + ${detailsModel>}}" wrapping="true" />
+                  <!-- <Text text="{detailsModel>details}" wrapping="true"></Text> -->
+                  <!-- Sub-bullets if it's an array -->
+                  <VBox visible="{= Array.isArray(${detailsModel>}) }" items="{detailsModel>/}">
+                    <items>
+                      <Text text="   ◦ {detailsModel>details}" wrapping="true" />
+                    </items>
+                  </VBox>
+                </VBox>
+              </items>
 						</VBox>
 					</Panel>
 				</l:SplitPane>
