@@ -6,6 +6,8 @@
   xmlns:l="sap.ui.layout"
   xmlns:grid="sap.ui.layout.cssgrid"
 	xmlns:f="sap.f">
+
+          
   <!-- <objPL:ObjectPageLayout id="ObjectPageLayout"
 		    subSectionLayout="TitleOnLeft"
         showTitleInHeaderContent="true"
@@ -27,14 +29,19 @@
           </objPL:ObjectPageSection>
         </objPL:sections>
   </objPL:ObjectPageLayout> -->
-
-      <f:GridList
+<l:ResponsiveSplitter defaultPane="default">
+  <l:PaneContainer resize=".onRootContainerResize">
+  <l:SplitPane requiredParentWidth="600" id="default">
+    <l:layoutData>
+      <l:SplitterLayoutData size="{  }" />
+    </l:layoutData>
+    <Panel height="100%">
+      <f:GridList 
         id="AccentureList"
         items="{Experience>/}">
         <f:customLayout>
-          <grid:GridBoxLayout boxMinWidth="12rem"/>
+          <cssgrid:GridBoxLayout xmlns:cssgrid="sap.ui.layout.cssgrid" boxesPerRowConfig="XL1 L1 M1 S1" />
         </f:customLayout>
-
         <f:GridListItem >
           <VBox class="sapUiSmallMargin">
             <layoutData>
@@ -49,8 +56,31 @@
             <tnt:InfoLabel text="Project Description - " />
             <Text text="{Experience>Project Description}" wrapping="true" />
             </HBox>
-            <Text text="{details}"></Text>
+            
           </VBox>
         </f:GridListItem>
       </f:GridList>
+    </Panel>
+  </l:SplitPane>     
+  <l:PaneContainer orientation="Vertical">
+				<l:SplitPane requiredParentWidth="600">
+					<l:layoutData>
+						<l:SplitterLayoutData size="auto"/>
+					</l:layoutData>
+					<Panel headerText="Minimum parent width 600">
+						<VBox>
+							<Text text="LayoutData.size={sizes>/pane2}" />
+							<Select forceSelection="false" selectedKey="1239102"
+								items="{
+									path: '/ProductCollection',
+									sorter: { path: 'Name' }
+								}">
+								<core:Item key="{ProductId}" text="{Name}" />
+							</Select>
+						</VBox>
+					</Panel>
+				</l:SplitPane>
+  </l:PaneContainer> 
+  </l:PaneContainer>
+</l:ResponsiveSplitter>
 </mvc:View>

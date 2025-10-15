@@ -1,4 +1,4 @@
-<mvc:View
+<mvc:View xmlns:vk="sap.ui.vk" xmlns:f="sap.f"
   controllerName="SapDevPortfolio.controller.App"
   xmlns:mvc="sap.ui.core.mvc"
   xmlns="sap.m">
@@ -37,6 +37,13 @@
             </content>
           </IconTabBar>
         </content>
+        <footer>
+							<OverflowToolbar id="otb3">
+								<ToolbarSpacer />
+								<Button text="Download Resume" iconFirst="true" icon="sap-icon://download" type="Transparent" />
+								
+							</OverflowToolbar>
+						</footer>
       </Page>
     </pages>
   </App>
