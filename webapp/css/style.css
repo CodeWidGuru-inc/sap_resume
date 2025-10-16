@@ -17,3 +17,13 @@ body {
         font-weight: bolder;
         text-align: center;
     }
+.bulletPoint {
+  text-indent: -10px;
+  text-align: left;
+}
+.subBulletPoint {
+  padding-left: 30px;
+  text-indent: -10px;
+  padding-top: 0%;
+  text-align: left;
+}    

@@ -11,9 +11,6 @@ sap.ui.define([
       var temp = this.getView().setModel(oModel, "detailsModel");
       console.log(this.getView());
       console.log(temp);
-      // var oRightSplitArea = this.getView().byId("fillmedaddy");
-      // // oRightSplitArea.setText(oExperience.details);
-      // oRightSplitArea.
     }
   });
 });

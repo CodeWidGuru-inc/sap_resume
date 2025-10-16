@@ -33,18 +33,16 @@
   <l:PaneContainer >
   <l:SplitPane requiredParentWidth="600" id="default"> 
 
-    <Panel height="100%" width="auto" class="sapUiResponsiveMargin">
+    <Panel headerText="Total Experience: {}" stickyHeader="true" width="auto" class="sapUiResponsiveMargin">
       <f:GridList 
-        id="AccentureList"
+        id="ExperienceList"
         items="{Experience>/}">
         <f:customLayout>
           <cssgrid:GridBoxLayout xmlns:cssgrid="sap.ui.layout.cssgrid" boxesPerRowConfig="XL1 L1 M1 S1" />
         </f:customLayout>
         <f:GridListItem type="Active" press="onPress">
           <VBox class="sapUiSmallMargin">
-            <layoutData>
-              <FlexItemData growFactor="1" shrinkFactor="0" />
-            </layoutData>
+
             <Title text="{Experience>company}" wrapping="true" />
             <Label text="Client - {Experience>client}" wrapping="true" />
             <Label text="Role - {Experience>role}" wrapping="true" />
@@ -54,13 +52,12 @@
             <tnt:InfoLabel text="Project Description - " />
             <Text text="{Experience>Project Description}" wrapping="true" />
             </HBox>
-            
           </VBox>
         </f:GridListItem>
       </f:GridList>
     </Panel>
-  </l:SplitPane>     
-  <l:PaneContainer orientation="Vertical" >
+  </l:SplitPane>
+  <l:PaneContainer orientation="Vertical">
 				<l:SplitPane requiredParentWidth="600">
 					<l:layoutData>
 						<l:SplitterLayoutData size="auto"/>
@@ -70,12 +67,12 @@
 							<items>
                 <VBox>
                   <!-- Main bullet -->
-                  <Text text="{= Array.isArray(${detailsModel>}) ? '' : '• ' + ${detailsModel>}}" wrapping="true" />
+                  <Text class="bulletPoint" text="{= Array.isArray(${detailsModel>}) ? '' : '• ' + ${detailsModel>}}" wrapping="true" />
                   <!-- <Text text="{detailsModel>details}" wrapping="true"></Text> -->
                   <!-- Sub-bullets if it's an array -->
-                  <VBox visible="{= Array.isArray(${detailsModel>}) }" items="{detailsModel>/}">
+                  <VBox visible="{= Array.isArray(${detailsModel>}) }" items="{detailsModel>}">
                     <items>
-                      <Text text="   ◦ {detailsModel>details}" wrapping="true" />
+                      <Text class="subBulletPoint" text="◦ {detailsModel>}" wrapping="true" renderWhitespace="true" textAlign="Initial" wrappingType="Hyphenated"/>
                     </items>
                   </VBox>
                 </VBox>
