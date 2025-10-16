@@ -19,11 +19,21 @@ body {
     }
 .bulletPoint {
   text-indent: -10px;
-  text-align: left;
+  text-align: justify;
 }
 .subBulletPoint {
   padding-left: 30px;
   text-indent: -10px;
   padding-top: 0%;
-  text-align: left;
+  text-align: justify;
 }    
+.textJustify {
+  text-align: justify;
+}
+
+.logo {
+  padding-top: 20%;
+}
+.clientlogo {
+  padding-top: 20%;
+}

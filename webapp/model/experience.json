@@ -1,5 +1,7 @@
 [
   { "id": "Accenture",
+    "logo": "images/accenture_logo.png",
+    "logo_client": "images/telia_logo.png",
     "company": "Accenture Solutions Pvt. Ltd.",
     "client":  "Telia Company AB",
     "role": "Packaged App Development Senior Analyst",
@@ -32,6 +34,8 @@
               ]
   },
   { "id": "Accenture",
+    "logo": "images/accenture_logo.png",
+    "logo_client": "images/Loreal_logo.png",
     "company": "Accenture Solutions Pvt. Ltd.",
     "client":  "L’Oreal",
     "role": "Packaged App Development Senior Analyst",
@@ -45,6 +49,8 @@
                 "Debugging for analysis, solution proposals and Bug fixes"]
   },
   { "id": "Infosys",
+    "logo": "images/Infosys_logo.png",
+    "logo_client": "images/Unilever_logo.png",
     "company": "Infosys Ltd.", 
     "client": "Unilever PLC",
     "role": "Technology Analyst",
@@ -64,6 +70,8 @@
                "Coordinated with PLM R&D owners and supply chain as part of Material Life cycle Management team running Data cleansing process for each quarter for removing the unutilized non stock materials, their specifications, recipes and linked BOMs"]
   },
   { "id": "Infosys",
+    "logo": "images/Infosys_logo.png",
+    "logo_client": "images/Bombardier_logo.png",
     "company": "Infosys Ltd.", 
     "client": "Bombardier Aviation",
     "role": "Senior Systems Engineer ",

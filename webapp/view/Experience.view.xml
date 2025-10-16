@@ -7,7 +7,6 @@
   xmlns:grid="sap.ui.layout.cssgrid"
 	xmlns:f="sap.f">
 
-          
   <!-- <objPL:ObjectPageLayout id="ObjectPageLayout"
 		    subSectionLayout="TitleOnLeft"
         showTitleInHeaderContent="true"
@@ -29,32 +28,40 @@
           </objPL:ObjectPageSection>
         </objPL:sections>
   </objPL:ObjectPageLayout> -->
+  
 <l:ResponsiveSplitter defaultPane="default">
   <l:PaneContainer >
   <l:SplitPane requiredParentWidth="600" id="default"> 
 
-    <Panel headerText="Total Experience: {}" stickyHeader="true" width="auto" class="sapUiResponsiveMargin">
+    <Panel headerText="Total Experience: {}" stickyHeader="true" width="auto" class="sapUiResponsiveMargin" expand="true">
+      <ScrollContainer height="20rem" width="auto" vertical="true" horizontal="false" class="sapUiContentPadding">
       <f:GridList 
         id="ExperienceList"
-        items="{Experience>/}">
+        items="{Experience>/}" >
         <f:customLayout>
           <cssgrid:GridBoxLayout xmlns:cssgrid="sap.ui.layout.cssgrid" boxesPerRowConfig="XL1 L1 M1 S1" />
         </f:customLayout>
         <f:GridListItem type="Active" press="onPress">
           <VBox class="sapUiSmallMargin">
-
+            <HBox>
+            <Image class="logo" src="{Experience>logo}" height="45px" width="auto"/>
+            <VBox class="sapUiSmallMargin">
             <Title text="{Experience>company}" wrapping="true" />
             <Label text="Client - {Experience>client}" wrapping="true" />
             <Label text="Role - {Experience>role}" wrapping="true" />
             <Label text="{Experience>duration}" wrapping="true" />
             <Label text="" width="100%"></Label>
+            </VBox>
+            <Image class="clientlogo" src="{Experience>logo_client}" height="65px" width="auto" />
+            </HBox>
             <HBox>
             <tnt:InfoLabel text="Project Description - " />
-            <Text text="{Experience>Project Description}" wrapping="true" />
+            <Text class="textJustify" text="{Experience>Project Description}" wrapping="true" wrappingType="Hyphenated"/>
             </HBox>
           </VBox>
         </f:GridListItem>
       </f:GridList>
+      </ScrollContainer>
     </Panel>
   </l:SplitPane>
   <l:PaneContainer orientation="Vertical">
@@ -62,7 +69,7 @@
 					<l:layoutData>
 						<l:SplitterLayoutData size="auto"/>
 					</l:layoutData>
-					<Panel stickyHeader="true" height="" headerText="Experience Details" width="auto" class="sapUiResponsiveMargin">
+					<Panel stickyHeader="true" height="25rem" headerText="Experience Details" width="auto" class="sapUiResponsiveMargin">
 						<VBox items="{detailsModel>/}" id="fillmedaddy" height="500px" width="auto" class="sapUiSmallMargin">
 							<items>
                 <VBox>
