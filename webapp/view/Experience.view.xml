@@ -73,8 +73,8 @@
 					<l:layoutData>
 						<l:SplitterLayoutData size="auto"/>
 					</l:layoutData>
-					<Panel stickyHeader="true" height="25rem" headerText="Experience Details" width="auto" class="sapUiResponsiveMargin">
-						<VBox items="{detailsModel>/}" id="fillmedaddy" height="500px" width="auto" class="sapUiSmallMargin">
+					<Panel stickyHeader="true" headerText="Experience Details" width="auto" class="sapUiResponsiveMargin">
+						<VBox items="{detailsModel>/}" id="fillmedaddy" height="15rem" width="auto" class="sapUiSmallMargin">
 							<items>
                 <VBox>
                   <!-- Main bullet -->
