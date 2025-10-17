@@ -32,7 +32,6 @@
 <l:ResponsiveSplitter defaultPane="default">
   <l:PaneContainer >
   <l:SplitPane requiredParentWidth="600" id="default"> 
-
     <Panel headerText="Total Experience: {}" stickyHeader="true" width="auto" class="sapUiResponsiveMargin" expand="true">
       <ScrollContainer height="20rem" width="auto" vertical="true" horizontal="false" class="sapUiContentPadding">
       <f:GridList 
@@ -43,17 +42,22 @@
         </f:customLayout>
         <f:GridListItem type="Active" press="onPress">
           <VBox class="sapUiSmallMargin">
-            <HBox>
-            <Image class="logo" src="{Experience>logo}" height="45px" width="auto"/>
-            <VBox class="sapUiSmallMargin">
+            <FlexBox justifyContent="SpaceBetween" alignItems="Center" direction="Row">
+            <VBox>
+            <Image class="logo" src="{Experience>logo}"/>
+            </VBox>
+            <VBox>
             <Title text="{Experience>company}" wrapping="true" />
             <Label text="Client - {Experience>client}" wrapping="true" />
             <Label text="Role - {Experience>role}" wrapping="true" />
             <Label text="{Experience>duration}" wrapping="true" />
             <Label text="" width="100%"></Label>
             </VBox>
-            <Image class="clientlogo" src="{Experience>logo_client}" height="65px" width="auto" />
-            </HBox>
+
+            <Image class="clientlogo" 
+            src="{Experience>logo_client}" 
+            />
+            </FlexBox>
             <HBox>
             <tnt:InfoLabel text="Project Description - " />
             <Text class="textJustify" text="{Experience>Project Description}" wrapping="true" wrappingType="Hyphenated"/>
