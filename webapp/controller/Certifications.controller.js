@@ -22,6 +22,14 @@ sap.ui.define([
     // }.bind(this));
     },
 
+    onPress : function(oEvent) {
+        var oItem = oEvent.getSource();
+        var oCtx = oItem.getBindingContext("Certifications");
+        var oCertification = oCtx.getObject();
+        var sUrl = oCertification.url;
+        window.open(sUrl, "_blank");
+    },
+
     onAfterRendering: function () {
         // var injectCredlyScript = function () {
         // if (!document.querySelector("script[src*='credly.com']")) {

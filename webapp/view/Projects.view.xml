@@ -2,10 +2,10 @@
   controllerName="SapDevPortfolio.controller.Projects"
   xmlns:mvc="sap.ui.core.mvc"
   xmlns="sap.m">
-  <VBox>
-    <Title text="{i18n>projectsTitle}"/>
-    <List items="{projects>/}">
-      <StandardListItem title="{projects>title}" description="{projects>tech}" icon="{projects>image}"/>
-    </List>
-  </VBox>
+  <Panel >
+    <VBox class="sapUiSmallMargin Certifications">
+      <Image class="Cert_image" src="images/Work_in_progress.png"></Image>
+      <Text text="Work-In-Progress" class="project_text"></Text>
+    </VBox>
+  </Panel>
 </mvc:View>

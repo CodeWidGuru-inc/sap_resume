@@ -45,7 +45,11 @@
                             </IconTabFilter>
                             <IconTabFilter text="{i18n>projectsTitle}"
                                            icon="sap-icon://course-book"
-                                           key="projects" />
+                                           key="projects">
+                                <content>
+                                    <mvc:XMLView viewName="SapDevPortfolio.view.Projects" />
+                                </content>
+                            </IconTabFilter>
                             <IconTabFilter text="{i18n>experienceTitle}"
                                            icon="sap-icon://customer-history"
                                            key="experience">
