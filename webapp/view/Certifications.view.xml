@@ -16,7 +16,8 @@
             <f:GridListItem type="Active"
                             press="onPress">
                 <VBox class="sapUiSmallMargin Certifications">
-                    <Image class="Cert_image" src="{Certifications>path}" />
+                    <Image class="Cert_image"
+                           src="{Certifications>path}" />
                 </VBox>
             </f:GridListItem>
         </f:GridList>

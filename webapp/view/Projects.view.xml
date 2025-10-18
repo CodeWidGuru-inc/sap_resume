@@ -1,11 +1,13 @@
-<mvc:View
-  controllerName="SapDevPortfolio.controller.Projects"
-  xmlns:mvc="sap.ui.core.mvc"
-  xmlns="sap.m">
-  <Panel >
-    <VBox class="sapUiSmallMargin Certifications">
-      <Image class="Cert_image" src="images/Work_in_progress.png"></Image>
-      <Text text="Work-In-Progress" class="project_text"></Text>
-    </VBox>
-  </Panel>
+<?xml version="1.0" encoding="UTF-8" ?>
+<mvc:View controllerName="SapDevPortfolio.controller.Projects"
+          xmlns:mvc="sap.ui.core.mvc"
+          xmlns="sap.m">
+    <Panel>
+        <VBox class="sapUiSmallMargin Certifications">
+            <Image class="Cert_image"
+                   src="images/Work_in_progress.png" />
+            <Text text="Work-In-Progress"
+                  class="project_text" />
+        </VBox>
+    </Panel>
 </mvc:View>

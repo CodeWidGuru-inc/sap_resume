@@ -1,75 +1,106 @@
-<mvc:View xmlns:core="sap.ui.core" controllerName="SapDevPortfolio.controller.Skills"
+<?xml version="1.0" encoding="UTF-8"?>
+<mvc:View xmlns:core="sap.ui.core"
+          controllerName="SapDevPortfolio.controller.Skills"
           xmlns:mvc="sap.ui.core.mvc"
           xmlns="sap.m"
           xmlns:grid="sap.ui.layout.cssgrid"
           xmlns:f="sap.f">
-    <Panel id="techSkillList"
-           backgroundDesign="Transparent"
-           headerText="Technical Skills">
-        <f:GridList id="gridtechList"
-                    class="skillHeaderTextClass"
-                    items="{techSkills>/}">
-            <f:customLayout>
-                <grid:GridBoxLayout boxMinWidth="12rem" />
-            </f:customLayout>
-            <f:GridListItem>
-                <VBox class="sapUiSmallMargin">
-                    <layoutData>
-                        <FlexItemData growFactor="1"
-                                      shrinkFactor="0" />
-                    </layoutData>
-                    <Title text="{techSkills>name}"
-                           wrapping="true" />
-                    <Label text="{techSkills>level}"
-                           wrapping="true" />
-                </VBox>
-            </f:GridListItem>
-        </f:GridList>
-    </Panel>
-    <Panel id="modSkillList"
-           backgroundDesign="Transparent"
-           headerText="Modules">
-        <f:GridList id="gridmodList"
-                    class="skillHeaderTextClass"
-                    items="{modSkills>/}">
-            <f:customLayout>
-                <grid:GridBoxLayout boxMinWidth="10rem" />
-            </f:customLayout>
-            <f:GridListItem>
-                <VBox class="sapUiSmallMargin">
-                    <layoutData>
-                        <FlexItemData growFactor="1"
-                                      shrinkFactor="0" />
-                    </layoutData>
-                    <Title text="{modSkills>name}"
-                           wrapping="true" />
-                    <Label text="{modSkills>level}"
-                           wrapping="true" />
-                </VBox>
-            </f:GridListItem>
-        </f:GridList>
-    </Panel>
-    <Panel id="softSkillList"
-           backgroundDesign="Transparent"
-           headerText="Power Skills"
-		   class="softSkillPanel">   
-        <f:GridList id="gridsoftList"
-                    class="skillHeaderTextClass"
-                    items="{softSkills>/}">
-            <f:customLayout>
-                <grid:GridBoxLayout boxMinWidth="10rem" />
-            </f:customLayout>
-            <f:GridListItem>
-                <VBox class="sapUiSmallMargin">
-                    <layoutData>
-                        <FlexItemData growFactor="1"
-                                      shrinkFactor="0" />
-                    </layoutData>
-                    <Title text="{softSkills>name}"
-                           wrapping="true" />
-                    <!-- <Label text="{softSkills>level}" wrapping="true" /> -->
-                </VBox>
-            </f:GridListItem>
-        </f:GridList>
-    </Panel>
+        <ScrollContainer height="25rem"
+                         width="auto"
+                         vertical="true"
+                         horizontal="false"
+                         class="sapUiContentPadding">
+            <Panel id="techSkillList"
+                   backgroundDesign="Transparent"
+                   headerText="Technical Skills">
+                <f:GridList id="gridtechList"
+                            class="skillHeaderTextClass"
+                            items="{techSkills>/}">
+                    <f:customLayout>
+                        <grid:GridBoxLayout boxMinWidth="12rem" />
+                    </f:customLayout>
+                    <f:GridListItem>
+                        <VBox class="sapUiSmallMargin">
+                            <layoutData>
+                                <FlexItemData growFactor="1"
+                                              shrinkFactor="0" />
+                            </layoutData>
+                            <Title text="{techSkills>name}"
+                                   wrapping="true" />
+                            <Label text="{techSkills>level}"
+                                   wrapping="true" />
+                        </VBox>
+                    </f:GridListItem>
+                </f:GridList>
+            </Panel>
+            <Panel id="tools"
+                   backgroundDesign="Transparent"
+                   headerText="Tools">
+                <f:GridList id="toolsList"
+                            class="skillHeaderTextClass"
+                            items="{toolSkills>/}">
+                    <f:customLayout>
+                        <grid:GridBoxLayout boxMinWidth="12rem" />
+                    </f:customLayout>
+                    <f:GridListItem>
+                        <VBox class="sapUiSmallMargin">
+                            <layoutData>
+                                <FlexItemData growFactor="1"
+                                              shrinkFactor="0" />
+                            </layoutData>
+                            <Title text="{toolSkills>name}"
+                                   wrapping="true" />
+                            <Label text="{toolSkills>level}"
+                                   wrapping="true" />
+                        </VBox>
+                    </f:GridListItem>
+                </f:GridList>
+            </Panel>
+            <Panel id="modSkillList"
+                   backgroundDesign="Transparent"
+                   headerText="Modules">
+                <f:GridList id="gridmodList"
+                            class="skillHeaderTextClass"
+                            items="{modSkills>/}">
+                    <f:customLayout>
+                        <grid:GridBoxLayout boxMinWidth="10rem" />
+                    </f:customLayout>
+                    <f:GridListItem>
+                        <VBox class="sapUiSmallMargin">
+                            <layoutData>
+                                <FlexItemData growFactor="1"
+                                              shrinkFactor="0" />
+                            </layoutData>
+                            <Title text="{modSkills>name}"
+                                   wrapping="true" />
+                            <Label text="{modSkills>level}"
+                                   wrapping="true" />
+                        </VBox>
+                    </f:GridListItem>
+                </f:GridList>
+            </Panel>
+            <Panel id="softSkillList"
+                   backgroundDesign="Transparent"
+                   headerText="Power Skills"
+                   class="softSkillPanel">
+                <f:GridList id="gridsoftList"
+                            class="skillHeaderTextClass"
+                            items="{softSkills>/}">
+                    <f:customLayout>
+                        <grid:GridBoxLayout boxMinWidth="10rem" />
+                    </f:customLayout>
+                    <f:GridListItem>
+                        <VBox class="sapUiSmallMargin">
+                            <layoutData>
+                                <FlexItemData growFactor="1"
+                                              shrinkFactor="0" />
+                            </layoutData>
+                            <Title text="{softSkills>name}"
+                                   wrapping="true" />
+                            <!-- <Label text="{softSkills>level}" wrapping="true" /> -->
+                        </VBox>
+                    </f:GridListItem>
+                </f:GridList>
+            </Panel>
+        </ScrollContainer>
 </mvc:View>

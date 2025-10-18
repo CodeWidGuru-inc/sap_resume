@@ -18,16 +18,18 @@ sap.ui.define([
 
       // Filter arrays for each skill type
       var aTech = aSkills.filter(function(item) { return item.type === "technical"; });
+      var aTools = aSkills.filter(function(item) { return item.type === "tools"; });
       var aMod = aSkills.filter(function(item) { return item.type === "module"; });
       var aSoft = aSkills.filter(function(item) { return item.type === "soft"; });
 
       // Set filtered models for each GridList
       this.setModel(new sap.ui.model.json.JSONModel(aTech), "techSkills");
+      this.setModel(new sap.ui.model.json.JSONModel(aTools), "toolSkills");
       this.setModel(new sap.ui.model.json.JSONModel(aMod), "modSkills");
       this.setModel(new sap.ui.model.json.JSONModel(aSoft), "softSkills");
       }.bind(this));
       //End---------------Skills Model---------------
-      
+
       var oProjects = new JSONModel("model/projects.json");
       this.setModel(oProjects, "projects");
 
@@ -59,6 +61,7 @@ sap.ui.define([
         bundleName: "SapDevPortfolio.i18n.i18n"
       });
       this.setModel(i18nModel, "i18n");
-    }
+    },
+    
   });
 });

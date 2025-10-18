@@ -6,12 +6,19 @@
           xmlns="sap.m">
     <App>
         <pages>
-            <Page title="">
+            <Page title="SAP Developer Portfolio"
+                  class="pageClass">
                 <headerContent>
+                    <Image class="sapicon"
+                           src="images/sap_logo.png"
+                           width="auto"
+                           height="70px"
+                           alt="SAP Logo" />
                     <Button class="buttonClass"
                             icon="sap-icon://home"
-                            text="Home" 
+                            text="Home"
                             type="Up" />
+                    <ToolbarSpacer />
                     <Switch customTextOn="🌞"
                             customTextOff="🌙"
                             state="true"
@@ -29,10 +36,6 @@
                                          text="+91 9848022338" />
                         <ObjectAttribute title="Location"
                                          text="Hyderabad, India" />
-                        <ObjectAttribute title="Socials"
-                                         active="true"
-                                         press="onLinkedInPress">
-                                         </ObjectAttribute>
                     </ObjectHeader>
                     <IconTabBar>
                         <items>
@@ -59,15 +62,14 @@
                             </IconTabFilter>
                             <IconTabFilter text="{i18n>certificationsTitle}"
                                            icon="sap-icon://da"
-                                           key="certifications" >
+                                           key="certifications">
                                 <content>
                                     <mvc:XMLView viewName="SapDevPortfolio.view.Certifications" />
-                                </content>           
-                            </IconTabFilter>               
+                                </content>
+                            </IconTabFilter>
                             <IconTabFilter text="{i18n>contactTitle}"
                                            icon="sap-icon://business-card"
-                                           key="contact">
-                            </IconTabFilter>
+                                           key="contact" />
                         </items>
                         <content>
                             <!-- Fragments or Views for each tab -->
@@ -76,11 +78,19 @@
                 </content>
                 <footer>
                     <OverflowToolbar id="otb3">
+                        <Button type="Transparent"
+                                icon="/images/linkedIn_logo2.png"
+                                press="onLinkedInPress" />
+                        <Button type="Transparent"
+                                icon="/images/github_logo.png"
+                                press="ongitPress" />
+                        <HBox />
                         <ToolbarSpacer />
-                        <Button text="Download Resume"
+                        <Button class="download"
+                                text="Download Resume"
                                 iconFirst="true"
                                 icon="sap-icon://download"
-                                type="Accept" />
+                                type="Success" />
                     </OverflowToolbar>
                 </footer>
             </Page>

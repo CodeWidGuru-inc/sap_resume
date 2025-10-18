@@ -71,7 +71,6 @@ body {
   height: 200px;
   border-radius: 5px;
   object-fit: contain;
-  overflow: hidden;
 }
 
 .project_text {
@@ -79,4 +78,13 @@ body {
   font-weight: bold;
   font-size: 1.2rem;
   margin-top: 0.5rem;
+}
+
+.buttonClass {
+    margin-right: 10px;
+}
+.download .sapMBtnInner.sapMBtnText {
+    margin-right: 10px;
+    font-weight: bold;
+    font-family: sans-serif;
 }
