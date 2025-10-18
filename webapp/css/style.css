@@ -37,9 +37,30 @@ body {
   object-fit: contain;
 
 }
+
 .clientlogo {
   width: 130px;
   height: 75px;
   object-fit: contain;
-  mix-blend-mode: multiply;
+}
+
+/* Begin of Panel Header Styles */
+/* .softSkillPanel {
+    background-color: burlywood;
+    box-shadow: 2px 2px 5px rgb(100, 70, 70);
+} */
+ /* .sapMPanel .sapMPanelHeadingDiv>.sapMPanelHdr, .sapMPanelWrappingDiv, .sapMPanelWrappingDivTb {
+    border-bottom: .0625rem solid #a8b3bd;
+    background: #7db1dc40; 
+}*/
+
+ .sapMPanel .sapMPanelHeadingDiv>.sapMPanelHdr {
+    border-bottom: .0625rem solid #a8b3bd;
+    background: #7db1dc40;
+ }
+ /* End of Panel Header Styles */
+.Certifications {
+  width: 130px;
+  height: 175px;
+  object-fit: contain;
 }

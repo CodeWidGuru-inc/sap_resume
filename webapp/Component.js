@@ -27,6 +27,7 @@ sap.ui.define([
       this.setModel(new sap.ui.model.json.JSONModel(aSoft), "softSkills");
       }.bind(this));
       //End---------------Skills Model---------------
+      
       var oProjects = new JSONModel("model/projects.json");
       this.setModel(oProjects, "projects");
 
@@ -47,8 +48,13 @@ sap.ui.define([
         console.log(details);
         this.setModel(new sap.ui.model.json.JSONModel(details), "details");
       }.bind(this));
-
       //End---------------Experience Model---------------
+
+      //Begin-------------Certifications Model---------------
+      var oCertifications = new JSONModel("model/certifications.json");
+      this.setModel(oCertifications, "Certifications");
+      //End---------------Certifications Model---------------
+
       var i18nModel = new ResourceModel({
         bundleName: "SapDevPortfolio.i18n.i18n"
       });

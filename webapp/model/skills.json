@@ -6,7 +6,7 @@
   { "type": "technical", "name": "CAPM", "level": "Beginner" },
   { "type": "technical", "name": "Node.js", "level": "Intermediate" },
   { "type": "technical", "name": "JavaScript", "level": "Intermediate" },
-  { "type": "technical", "name": "HTML5 & CSS", "level": "Advanced" },
+  { "type": "technical", "name": "HTML5 & CSS3", "level": "Advanced" },
   { "type": "technical", "name": "GIT", "level": "Intermediate" },
   { "type": "technical", "name": "SQL", "level": "Advanced" },
   { "type": "technical", "name": "OData & CDS", "level": "Advanced" },

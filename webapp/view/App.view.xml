@@ -1,49 +1,85 @@
-<mvc:View xmlns:vk="sap.ui.vk" xmlns:f="sap.f"
-  controllerName="SapDevPortfolio.controller.App"
-  xmlns:mvc="sap.ui.core.mvc"
-  xmlns="sap.m">
-  <App>
-    <pages>
-      <Page title="">
-        <headerContent >
-          <Button class="buttonClass" icon="sap-icon://home" text="Home"></Button>
-          <Switch customTextOn="🌞" customTextOff="🌙" state="true" change="onToggleTheme" ></Switch>
-        </headerContent>
-        <content>
-          <ObjectHeader id="oh1" responsive="true" fullScreenOptimized="false" intro="SAP Full Stack Developer | ABAP on Cloud /S4HANA | ODATA | CDS | SAP Fiori/UI5 |" title="Guruteja Chilukoti">
-              <ObjectAttribute title="Email" text="Guruteja.Chilukoti@gmail.com"/>
-              <ObjectAttribute title="LinkedIn" text="www.linkedin.com/in/guruteja-chilukoti" active="true" press="onLinkedInPress"/>
-              <ObjectAttribute title="Phone"  text="+91 9848022338" />
-              <ObjectAttribute title="Location"  text="Hyderabad, India" />
-          </ObjectHeader>
-          <IconTabBar>
-            <items>
-              <IconTabFilter text="{i18n>skillsTitle}" icon="sap-icon://badge" key="skills">
+<?xml version="1.0" encoding="UTF-8"?>
+<mvc:View xmlns:vk="sap.ui.vk"
+          xmlns:f="sap.f"
+          controllerName="SapDevPortfolio.controller.App"
+          xmlns:mvc="sap.ui.core.mvc"
+          xmlns="sap.m">
+    <App>
+        <pages>
+            <Page title="">
+                <headerContent>
+                    <Button class="buttonClass"
+                            icon="sap-icon://home"
+                            text="Home" 
+                            type="Up" />
+                    <Switch customTextOn="🌞"
+                            customTextOff="🌙"
+                            state="true"
+                            change="onToggleTheme" />
+                </headerContent>
                 <content>
-                  <mvc:XMLView viewName="SapDevPortfolio.view.Skills"/>
+                    <ObjectHeader id="oh1"
+                                  responsive="true"
+                                  fullScreenOptimized="false"
+                                  intro="SAP Full Stack Developer | ABAP on Cloud /S4HANA | ODATA | CDS | SAP Fiori/UI5 |"
+                                  title="Guruteja Chilukoti">
+                        <ObjectAttribute title="Email"
+                                         text="Guruteja.Chilukoti@gmail.com" />
+                        <ObjectAttribute title="Phone"
+                                         text="+91 9848022338" />
+                        <ObjectAttribute title="Location"
+                                         text="Hyderabad, India" />
+                        <ObjectAttribute title="Socials"
+                                         active="true"
+                                         press="onLinkedInPress">
+                                         </ObjectAttribute>
+                    </ObjectHeader>
+                    <IconTabBar>
+                        <items>
+                            <IconTabFilter text="{i18n>skillsTitle}"
+                                           icon="sap-icon://badge"
+                                           key="skills">
+                                <content>
+                                    <mvc:XMLView viewName="SapDevPortfolio.view.Skills" />
+                                </content>
+                            </IconTabFilter>
+                            <IconTabFilter text="{i18n>projectsTitle}"
+                                           icon="sap-icon://course-book"
+                                           key="projects" />
+                            <IconTabFilter text="{i18n>experienceTitle}"
+                                           icon="sap-icon://customer-history"
+                                           key="experience">
+                                <content>
+                                    <mvc:XMLView viewName="SapDevPortfolio.view.Experience" />
+                                </content>
+                            </IconTabFilter>
+                            <IconTabFilter text="{i18n>certificationsTitle}"
+                                           icon="sap-icon://da"
+                                           key="certifications" >
+                                <content>
+                                    <mvc:XMLView viewName="SapDevPortfolio.view.Certifications" />
+                                </content>           
+                            </IconTabFilter>               
+                            <IconTabFilter text="{i18n>contactTitle}"
+                                           icon="sap-icon://business-card"
+                                           key="contact">
+                            </IconTabFilter>
+                        </items>
+                        <content>
+                            <!-- Fragments or Views for each tab -->
+                        </content>
+                    </IconTabBar>
                 </content>
-              </IconTabFilter>
-              <IconTabFilter text="{i18n>projectsTitle}" icon="sap-icon://course-book" key="projects"/>
-              <IconTabFilter text="{i18n>experienceTitle}" icon="sap-icon://customer-history" key="experience">
-                <content>
-                  <mvc:XMLView viewName="SapDevPortfolio.view.Experience"/>
-                </content>
-              </IconTabFilter>
-              <IconTabFilter text="{i18n>contactTitle}" icon="sap-icon://business-card" key="contact"/>
-            </items>
-            
-            <content>
-              <!-- Fragments or Views for each tab -->
-            </content>
-          </IconTabBar>
-        </content>
-        <footer>
-          <OverflowToolbar id="otb3">
-            <ToolbarSpacer />
-            <Button text="Download Resume" iconFirst="true" icon="sap-icon://download" type="Transparent" />
-          </OverflowToolbar>
-        </footer>
-      </Page>
-    </pages>
-  </App>
+                <footer>
+                    <OverflowToolbar id="otb3">
+                        <ToolbarSpacer />
+                        <Button text="Download Resume"
+                                iconFirst="true"
+                                icon="sap-icon://download"
+                                type="Accept" />
+                    </OverflowToolbar>
+                </footer>
+            </Page>
+        </pages>
+    </App>
 </mvc:View>
