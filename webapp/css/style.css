@@ -27,6 +27,16 @@ body {
   padding-top: 0%;
   text-align: justify;
 }    
+.roleText {
+  padding-left: 2.5rem;   /*39px*/
+  text-indent: -2.5rem;   /*-39px*/
+}
+
+.clientText {
+  padding-left: 3rem;   
+  text-indent: -3rem;   
+}
+
 .textJustify {
   text-align: justify;
 }

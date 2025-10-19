@@ -2,12 +2,10 @@
 <mvc:View controllerName="SapDevPortfolio.controller.Contact"
           xmlns:mvc="sap.ui.core.mvc"
           xmlns="sap.m">
-    <Panel>
+    <Panel width="40%"
+    headerText="{i18n>contactTitle}:">
         <VBox>
-            <Title text="{i18n>contactTitle}" />
-            <Text text="Email: your.email@example.com" />
-            <Text text="LinkedIn: linkedin.com/in/yourprofile" />
-            <Text text="GitHub: github.com/yourusername" />
+            <Text text="* Mail Integration In Progress" />
         </VBox>
     </Panel>
 </mvc:View>

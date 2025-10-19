@@ -63,9 +63,9 @@
                                         <VBox>
                                             <Title text="{Experience>company}"
                                                    wrapping="true" />
-                                            <Label text="Client - {Experience>client}"
+                                            <Label class="clientText" text="Client - {Experience>client}"
                                                    wrapping="true" />
-                                            <Label text="Role - {Experience>role}"
+                                            <Label class="roleText" text="Role - {Experience>role}"
                                                    wrapping="true" />
                                             <Label text="{Experience>duration}"
                                                    wrapping="true" />

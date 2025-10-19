@@ -74,13 +74,16 @@
                                     <mvc:XMLView viewName="SapDevPortfolio.view.Certifications" />
                                 </content>
                             </IconTabFilter>
-                            <IconTabFilter text="{i18n>contactTitle}"
+
+                            <!-- Integrate mail API in Contact page and enable -->
+                            <!-- <IconTabFilter text="{i18n>contactTitle}"
                                            icon="sap-icon://business-card"
                                            key="contact">
                                 <content>
                                     <mvc:XMLView viewName="SapDevPortfolio.view.Contact" />
                                 </content>
-                            </IconTabFilter>
+                            </IconTabFilter> -->
+                            
                         </items>
                         <content>
                             <!-- Fragments or Views for each tab -->
