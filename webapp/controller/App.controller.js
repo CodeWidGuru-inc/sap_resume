@@ -19,5 +19,17 @@ sap.ui.define([
       var sUrl = "https://www.linkedin.com/in/guruteja-chilukoti";
       window.open(sUrl, "_blank");
     },
+
+    home: function() {
+      // Get the reference to the Skills IconFilter
+      var oSkillsTab = this.byId("iconTabBar");
+      var currentKey = oSkillsTab.getSelectedKey();
+      // Update the selection state of the Skills IconFilter
+      if (currentKey === "skills") {
+        return;
+      } else {
+        oSkillsTab.setSelectedKey("skills");
+      } 
+    }
   });
 });

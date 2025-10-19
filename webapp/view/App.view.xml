@@ -6,24 +6,30 @@
           xmlns="sap.m">
     <App>
         <pages>
-            <Page title="SAP Developer Portfolio"
-                  class="pageClass">
-                <headerContent>
-                    <Image class="sapicon"
-                           src="images/sap_logo.png"
-                           width="auto"
-                           height="70px"
-                           alt="SAP Logo" />
-                    <Button class="buttonClass"
-                            icon="sap-icon://home"
-                            text="Home"
-                            type="Up" />
-                    <ToolbarSpacer />
-                    <Switch customTextOn="🌞"
-                            customTextOff="🌙"
-                            state="true"
-                            change="onToggleTheme" />
-                </headerContent>
+            <Page title="SAP Developer Portfolio">
+                <customHeader>
+                    <Bar>
+                        <contentLeft>
+                            <Image src="images/sap_logo.png"
+                                   width="auto"
+                                   height="70px"
+                                   alt="SAP Logo" />
+                        </contentLeft>
+                        <contentRight>
+                            <Button class="buttonClass"
+                                    icon="sap-icon://home"
+                                    text="Home"
+                                    type="Up"
+                                    press="home" />
+                            <ToolbarSpacer />
+                            <Switch customTextOn="🌞"
+                                    customTextOff="🌙"
+                                    state="true"
+                                    change="onToggleTheme" />
+                        </contentRight>
+                    </Bar>
+                </customHeader>
+                <headerContent />
                 <content>
                     <ObjectHeader id="oh1"
                                   responsive="true"
@@ -31,17 +37,18 @@
                                   intro="SAP Full Stack Developer | ABAP on Cloud /S4HANA | ODATA | CDS | SAP Fiori/UI5 |"
                                   title="Guruteja Chilukoti">
                         <ObjectAttribute title="Email"
-                                         text="Guruteja.Chilukoti@gmail.com" />
+                                         text="Guru.Chilukoti@gmail.com" />
                         <ObjectAttribute title="Phone"
                                          text="+91 9848022338" />
                         <ObjectAttribute title="Location"
                                          text="Hyderabad, India" />
                     </ObjectHeader>
-                    <IconTabBar>
+                    <IconTabBar id="iconTabBar">
                         <items>
                             <IconTabFilter text="{i18n>skillsTitle}"
                                            icon="sap-icon://badge"
-                                           key="skills">
+                                           key="skills"
+                                           id="skillsTab">
                                 <content>
                                     <mvc:XMLView viewName="SapDevPortfolio.view.Skills" />
                                 </content>
@@ -69,7 +76,11 @@
                             </IconTabFilter>
                             <IconTabFilter text="{i18n>contactTitle}"
                                            icon="sap-icon://business-card"
-                                           key="contact" />
+                                           key="contact">
+                                <content>
+                                    <mvc:XMLView viewName="SapDevPortfolio.view.Contact" />
+                                </content>
+                            </IconTabFilter>
                         </items>
                         <content>
                             <!-- Fragments or Views for each tab -->
@@ -78,6 +89,7 @@
                 </content>
                 <footer>
                     <OverflowToolbar id="otb3">
+                        <HBox />
                         <Button type="Transparent"
                                 icon="/images/linkedIn_logo2.png"
                                 press="onLinkedInPress" />

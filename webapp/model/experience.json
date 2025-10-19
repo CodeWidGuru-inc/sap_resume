@@ -76,16 +76,16 @@
     "client": "Bombardier Aviation",
     "role": "Senior Systems Engineer ",
     "duration": "October 2018 - November 2020",
-    "Project Description": "Bombardier Aviation is a commercial aircraft manufacturing subsidiary of Bombardier Inc. During its partnership with AIRBUS for a new Cseries program, they needed their PLM platform with custom enhancements and later with their acquisition of TRIUMPH’s wing program they needed to extend their existing PLM platform to the new wing manufacturing division.",
+    "Project Description": "Bombardier Aviation is a commercial aircraft manufacturing subsidiary of Bombardier Inc. During its partnership with AIRBUS for a new Cseries program, they needed their PLM platform with custom enhancements, custom business reports, programs for business process execution and later with their acquisition of TRIUMPH’s wing program they needed to extend their existing processes to the new wing manufacturing division.",
     "details": ["Worked on various Workbench objects.",
                 "Creation of DDIC objects and maintaining TVARVC entries used in custom programs",
-                "Solution Design from requirements gathered and documenting SD & DD",
+                "Solution Design from requirements gathered and documenting Solution Document & Detailed Document",
                 "Debugging complex scenarios by understanding functional processes for implementing implicit & explicit BADI enhancements in custom and standard programs",
                 "Designing custom report programs using FM ALV, OOPS ALV for business reports",
-                "Developing custom layouts using Adobe Forms",
-                "Creation and usage of OOPS for custom class to authorization check using auth objects for segregation of data & t-codes as per business requirement",
+                "Developing custom programs for process execution, custom layouts using Adobe Forms",
+                "Usage of OOPS in custom utility class creation for authorization checks using auth objects for segregation of data in standard programs as per business requirement",
                 "Creation of custom programs to extend material to plants using BAPI.",
-                "Automating creation of test data using eCATT or SAP script recorder",
+                "Automating creation of data using eCATT or SAP script recorder",
                 "Creating use case documents and performing Unit and integration testing in lower systems"
               ]
   }
