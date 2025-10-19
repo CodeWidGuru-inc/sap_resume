@@ -10,7 +10,7 @@
     <Panel id="CertificationsList"
            backgroundDesign="Transparent">
         <f:GridList id="CertificationsGridList"
-                    items="{Certifications>/}">git add
+                    items="{Certifications>/}">
             <f:customLayout>
                 <grid:ResponsiveColumnLayout />
             </f:customLayout>
