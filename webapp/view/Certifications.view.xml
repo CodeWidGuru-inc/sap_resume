@@ -8,14 +8,23 @@
           xmlns:grid="sap.ui.layout.cssgrid"
           xmlns="sap.m">
     <Panel id="CertificationsList"
-           backgroundDesign="Transparent"
-           class="certificationsPanel">
+           backgroundDesign="Transparent">
         <f:GridList id="CertificationsGridList"
-                    class=""
-                    items="{Certifications>/}">
-            <f:GridListItem type="Active"
+                    items="{Certifications>/}">git add
+            <f:customLayout>
+                <grid:ResponsiveColumnLayout />
+            </f:customLayout>
+            <f:GridListItem class="certItems"
+                            type="Active"
                             press="onPress">
+                <f:layoutData>
+                    <grid:ResponsiveColumnItemLayoutData columns="3" />
+                </f:layoutData>
                 <VBox class="sapUiSmallMargin Certifications">
+                    <layoutData>
+                        <FlexItemData growFactor="1"
+                                      shrinkFactor="0" />
+                    </layoutData>
                     <Image class="Cert_image"
                            src="{Certifications>path}" />
                 </VBox>
