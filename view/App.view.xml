@@ -6,7 +6,7 @@
           xmlns="sap.m">
     <App>
         <pages>
-            <Page title="SAP Developer Portfolio">
+            <Page>
                 <customHeader>
                     <Bar>
                         <contentLeft>
@@ -40,8 +40,10 @@
                                          text="Guru.Chilukoti@gmail.com" />
                         <ObjectAttribute title="Phone"
                                          text="+91 9848022338" />
-                        <ObjectAttribute title="Location"
+                        <ObjectAttribute title="Current Location"
                                          text="Hyderabad, India" />
+                        <ObjectAttribute title="Preferred Location"
+                                         text="Hyderabad, Bangalore" />
                     </ObjectHeader>
                     <IconTabBar id="iconTabBar">
                         <items>
@@ -74,7 +76,6 @@
                                     <mvc:XMLView viewName="SapDevPortfolio.view.Certifications" />
                                 </content>
                             </IconTabFilter>
-
                             <!-- Integrate mail API in Contact page and enable -->
                             <!-- <IconTabFilter text="{i18n>contactTitle}"
                                            icon="sap-icon://business-card"
@@ -83,7 +84,6 @@
                                     <mvc:XMLView viewName="SapDevPortfolio.view.Contact" />
                                 </content>
                             </IconTabFilter> -->
-                            
                         </items>
                         <content>
                             <!-- Fragments or Views for each tab -->
