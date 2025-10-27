@@ -10,7 +10,6 @@ sap.ui.define([
       this.getView().setModel(oModel);
     },
     onToggleTheme: function(oEvent) {
-      console.log("Toggle button pressed");
       var bPressed = oEvent.getParameter("state");
       var sTheme = bPressed ? "sap_horizon" : "sap_horizon_dark";
       sap.ui.getCore().applyTheme(sTheme);
