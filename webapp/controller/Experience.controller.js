@@ -21,8 +21,6 @@ sap.ui.define([
       var oExperience = oCtx.getObject();
       const oModel = new sap.ui.model.json.JSONModel(oExperience.details);
       var temp = this.getView().setModel(oModel, "detailsModel");
-      console.log(this.getView());
-      console.log(temp);
     }
   });
 });
