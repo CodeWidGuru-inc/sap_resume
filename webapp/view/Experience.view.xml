@@ -98,7 +98,7 @@
                            width="auto"
                            class="sapUiResponsiveMargin">
                         <VBox items="{detailsModel>/}"
-                              id="fillmedaddy"
+                              id="fillme"
                               height="18rem"
                               width="auto"
                               class="sapUiSmallMargin">
