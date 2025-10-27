@@ -47,7 +47,6 @@ sap.ui.define([
       // this.setModel(new sap.ui.model.json.JSONModel(aInfosys), "Infosys");
         this.setModel(new sap.ui.model.json.JSONModel(aExperience), "Experience");
         var details = aExperience.map(function(item) { return {id: item.id, details: item.details} });
-        console.log(details);
         this.setModel(new sap.ui.model.json.JSONModel(details), "details");
       }.bind(this));
       //End---------------Experience Model---------------
