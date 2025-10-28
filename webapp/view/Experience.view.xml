@@ -39,7 +39,7 @@
                        width="auto"
                        class="sapUiResponsiveMargin"
                        expand="true">
-                    <ScrollContainer height="40vh"
+                    <ScrollContainer height="45vh"
                                      width="auto"
                                      vertical="true"
                                      horizontal="false"
