@@ -94,10 +94,10 @@
                     <OverflowToolbar id="otb3">
                         <HBox />
                         <Button type="Transparent"
-                                icon="/images/linkedin_logo2.ico"
+                                icon="/images/linkedin_logo2.png"
                                 press="onLinkedInPress" />
                         <Button type="Transparent"
-                                icon="/images/github_logo.ico"
+                                icon="/images/github_logo.png"
                                 press="ongitPress" />
                         <HBox />
                         <ToolbarSpacer />
