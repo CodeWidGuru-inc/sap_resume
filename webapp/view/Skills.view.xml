@@ -5,7 +5,7 @@
           xmlns="sap.m"
           xmlns:grid="sap.ui.layout.cssgrid"
           xmlns:f="sap.f">
-        <ScrollContainer height="100%"
+        <ScrollContainer height="60vh"
                          width="auto"
                          vertical="true"
                          horizontal="false"
