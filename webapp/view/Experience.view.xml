@@ -39,7 +39,7 @@
                        width="auto"
                        class="sapUiResponsiveMargin"
                        expand="true">
-                    <ScrollContainer height="50vh"
+                    <ScrollContainer height="40vh"
                                      width="auto"
                                      vertical="true"
                                      horizontal="false"
@@ -99,7 +99,7 @@
                            class="sapUiResponsiveMargin">
                         <VBox items="{detailsModel>/}"
                               id="fillme"
-                              height="18rem"
+                              height="40vh"
                               width="auto"
                               class="sapUiSmallMargin">
                             <items>
