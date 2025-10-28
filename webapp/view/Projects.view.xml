@@ -2,7 +2,7 @@
 <mvc:View controllerName="SapDevPortfolio.controller.Projects"
           xmlns:mvc="sap.ui.core.mvc"
           xmlns="sap.m">
-    <Panel>
+    <Panel height="60vh">
         <VBox class="sapUiSmallMargin Certifications">
             <Image class="Cert_image"
                    src="images/Work_in_progress.png" />
