@@ -1,0 +1,2 @@
+sap.ui.define(["sap/ui/core/mvc/Controller","sap/ui/model/json/JSONModel","sap/ui/core/HTML"],function(n,e,o){"use strict";return n.extend("SapDevPortfolio.controller.Certifications",{onInit:function(){},onPress:function(n){var e=n.getSource();var o=e.getBindingContext("Certifications");var t=o.getObject();var i=t.url;window.open(i,"_blank")},onAfterRendering:function(){}})});
+//# sourceMappingURL=Certifications.controller.js.map

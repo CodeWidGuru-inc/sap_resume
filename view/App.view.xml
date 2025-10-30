@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mvc:View xmlns:vk="sap.ui.vk"
+          xmlns:f="sap.f"
+          controllerName="SapDevPortfolio.controller.App"
+          xmlns:mvc="sap.ui.core.mvc"
+          xmlns="sap.m">
+    <App>
+        <pages>
+            <Page>
+                <customHeader>
+                    <Bar>
+                        <contentLeft>
+                            <Image src="images/sap_logo.png"
+                                   width="auto"
+                                   height="70px"
+                                   alt="SAP Logo" />
+                        </contentLeft>
+                        <contentRight>
+                            <Button class="buttonClass"
+                                    icon="sap-icon://home"
+                                    text="Home"
+                                    type="Up"
+                                    press="home" />
+                            <ToolbarSpacer />
+                            <Switch customTextOn="🌞"
+                                    customTextOff="🌙"
+                                    state="true"
+                                    change="onToggleTheme" />
+                        </contentRight>
+                    </Bar>
+                </customHeader>
+                <headerContent />
+                <content>
+                    <ObjectHeader id="oh1"
+                                  responsive="true"
+                                  fullScreenOptimized="false"
+                                  intro="SAP Full Stack Developer | ABAP on Cloud /S4HANA | ODATA | CDS | SAP Fiori/UI5 |"
+                                  title="Guruteja Chilukoti">
+                        <ObjectAttribute title="Email"
+                                         text="Guru.Chilukoti@gmail.com" />
+                        <ObjectAttribute title="Phone"
+                                         text="+91 9848022338" />
+                        <ObjectAttribute title="Current Location"
+                                         text="Hyderabad, India" />
+                        <ObjectAttribute title="Preferred Location"
+                                         text="Hyderabad, Bangalore" />
+                    </ObjectHeader>
+                    <IconTabBar id="iconTabBar">
+                        <items>
+                            <IconTabFilter text="{i18n>skillsTitle}"
+                                           icon="sap-icon://badge"
+                                           key="skills"
+                                           id="skillsTab">
+                                <content>
+                                    <mvc:XMLView viewName="SapDevPortfolio.view.Skills" />
+                                </content>
+                            </IconTabFilter>
+                            <IconTabFilter text="{i18n>projectsTitle}"
+                                           icon="sap-icon://course-book"
+                                           key="projects">
+                                <content>
+                                    <mvc:XMLView viewName="SapDevPortfolio.view.Projects" />
+                                </content>
+                            </IconTabFilter>
+                            <IconTabFilter text="{i18n>experienceTitle}"
+                                           icon="sap-icon://customer-history"
+                                           key="experience">
+                                <content>
+                                    <mvc:XMLView viewName="SapDevPortfolio.view.Experience" />
+                                </content>
+                            </IconTabFilter>
+                            <IconTabFilter text="{i18n>certificationsTitle}"
+                                           icon="sap-icon://da"
+                                           key="certifications">
+                                <content>
+                                    <mvc:XMLView viewName="SapDevPortfolio.view.Certifications" />
+                                </content>
+                            </IconTabFilter>
+                            <!-- Integrate mail API in Contact page and enable -->
+                            <!-- <IconTabFilter text="{i18n>contactTitle}"
+                                           icon="sap-icon://business-card"
+                                           key="contact">
+                                <content>
+                                    <mvc:XMLView viewName="SapDevPortfolio.view.Contact" />
+                                </content>
+                            </IconTabFilter> -->
+                        </items>
+                        <content>
+                            <!-- Fragments or Views for each tab -->
+                        </content>
+                    </IconTabBar>
+                </content>
+                <footer>
+                    <OverflowToolbar id="otb3">
+                        <HBox />
+                        <Button type="Transparent"
+                                icon="images/linkedIn_logo.ico"
+                                press="onLinkedInPress" />
+                        <Button type="Transparent"
+                                icon="images/github_logo.ico"
+                                press="ongitPress" />
+                        <HBox />
+                        <ToolbarSpacer />
+                        <Button class="download"
+                                text="Download Resume"
+                                iconFirst="true"
+                                icon="sap-icon://download"
+                                type="Success" />
+                    </OverflowToolbar>
+                </footer>
+            </Page>
+        </pages>
+    </App>
+</mvc:View>

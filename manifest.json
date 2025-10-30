@@ -1,0 +1,54 @@
+{
+  "_version": "1.32.0",
+  "sap.app": {
+    "id": "SapDevPortfolio",
+    "type": "application",
+    "title": "SAP Full Stack Developer Portfolio",
+    "description": "Portfolio showcasing SAP full stack skills and projects.",
+    "applicationVersion": {
+      "version": "1.0.0"
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "resources": {
+      "css": [
+      {
+        "uri": "css/style.css"
+      }
+    ]},
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "rootView": {
+      "viewName": "SapDevPortfolio.view.App",
+      "type": "XML",
+      "id": "app"
+    },
+    "dependencies": {
+      "minUI5Version": "1.120.0",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {},
+        "sap.ui.layout": {},
+        "sap.f": {}
+      }
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "SapDevPortfolio.i18n.i18n"
+        }
+      }
+    }
+  }
+}

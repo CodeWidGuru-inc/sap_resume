@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mvc:View controllerName="SapDevPortfolio.controller.Contact"
+          xmlns:mvc="sap.ui.core.mvc"
+          xmlns="sap.m">
+    <Panel width="40%"
+    headerText="{i18n>contactTitle}:">
+        <VBox>
+            <Text text="* Mail Integration In Progress" />
+        </VBox>
+    </Panel>
+</mvc:View>

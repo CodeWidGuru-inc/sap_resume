@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mvc:View xmlns:tnt="sap.tnt"
+          xmlns:core="sap.ui.core"
+          controllerName="SapDevPortfolio.controller.Experience"
+          xmlns:mvc="sap.ui.core.mvc"
+          xmlns:html="sap.ui.core.HTML"
+          xmlns="sap.m"
+          xmlns:l="sap.ui.layout"
+          xmlns:grid="sap.ui.layout.cssgrid"
+          xmlns:f="sap.f">
+    <!-- <objPL:ObjectPageLayout id="ObjectPageLayout"
+		    subSectionLayout="TitleOnLeft"
+        showTitleInHeaderContent="true"
+        upperCaseAnchorBar="false">
+        <objPL:sections>
+          <objPL:ObjectPageSection titleUppercase="false" title="2014 Goals Plan">
+            <objPL:subSections>
+              <objPL:ObjectPageSubSection title="Goal summary" titleUppercase="false">
+                <objPL:blocks>
+                  <Text text="• Achieved 100% of the goals set for 2014"/>
+                  <Text text="• Awarded STAR of the Quarter for Q4 2014"/>
+                  <Text text="• Awarded STAR of the Year for 2014"/>
+                  <Text text="• Awarded Special Recognition Award for 2014"/>
+                  <Text text="• Awarded Special Recognition Award for 2015"/>
+                  <Text text="• Promoted to Senior Software Engineer in November 2015"/>
+                </objPL:blocks>
+              </objPL:ObjectPageSubSection>
+            </objPL:subSections>
+          </objPL:ObjectPageSection>
+        </objPL:sections>
+  </objPL:ObjectPageLayout> -->
+    <l:ResponsiveSplitter defaultPane="default">
+        <l:PaneContainer>
+            <l:SplitPane requiredParentWidth="600"
+                         id="default">
+                <Panel id="exp_panel"
+                       headerText=""
+                       stickyHeader="true"
+                       width="auto"
+                       class="sapUiResponsiveMargin"
+                       expand="true">
+                    <ScrollContainer height="44vh"
+                                     width="auto"
+                                     vertical="true"
+                                     horizontal="false"
+                                     class="sapUiContentPadding">
+                        <f:GridList id="ExperienceList"
+                                    items="{Experience>/}">
+                            <f:customLayout>
+                                <cssgrid:GridBoxLayout xmlns:cssgrid="sap.ui.layout.cssgrid"
+                                                       boxesPerRowConfig="XL1 L1 M1 S1" />
+                            </f:customLayout>
+                            <f:GridListItem type="Active"
+                                            press="onPress">
+                                <VBox class="sapUiSmallMargin">
+                                    <FlexBox justifyContent="SpaceBetween"
+                                             alignItems="Center"
+                                             direction="Row">
+                                        <VBox>
+                                            <Image class="logo"
+                                                   src="{Experience>logo}" />
+                                        </VBox>
+                                        <VBox>
+                                            <Title text="{Experience>company}"
+                                                   wrapping="true" />
+                                            <Label class="clientText" text="Client - {Experience>client}"
+                                                   wrapping="true" />
+                                            <Label class="roleText" text="Role - {Experience>role}"
+                                                   wrapping="true" />
+                                            <Label text="{Experience>duration}"
+                                                   wrapping="true" />
+                                            <Label text=""
+                                                   width="100%" />
+                                        </VBox>
+                                        <Image class="clientlogo"
+                                               src="{Experience>logo_client}" />
+                                    </FlexBox>
+                                    <HBox>
+                                        <tnt:InfoLabel text="Project Description - " />
+                                        <Text class="textJustify"
+                                              text="{Experience>Project Description}"
+                                              wrapping="true"
+                                              wrappingType="Hyphenated" />
+                                    </HBox>
+                                </VBox>
+                            </f:GridListItem>
+                        </f:GridList>
+                    </ScrollContainer>
+                </Panel>
+            </l:SplitPane>
+            <l:PaneContainer orientation="Vertical">
+                <l:SplitPane requiredParentWidth="600">
+                    <l:layoutData>
+                        <l:SplitterLayoutData size="auto" />
+                    </l:layoutData>
+                    <Panel stickyHeader="true"
+                           headerText="Experience Details"
+                           width="auto"
+                           class="sapUiResponsiveMargin">
+                        <VBox items="{detailsModel>/}"
+                              id="fillme"
+                              height="40vh"
+                              width="auto"
+                              class="sapUiSmallMargin">
+                            <items>
+                                <VBox>
+                                    <!-- Main bullet -->
+                                    <Text class="bulletPoint"
+                                          text="{= Array.isArray(${detailsModel>}) ? '' : '• ' + ${detailsModel>}}"
+                                          wrapping="true" />
+                                    <!-- <Text text="{detailsModel>details}" wrapping="true"></Text> -->
+                                    <!-- Sub-bullets if it's an array -->
+                                    <VBox visible="{= Array.isArray(${detailsModel>}) }"
+                                          items="{detailsModel>}">
+                                        <items>
+                                            <Text class="subBulletPoint"
+                                                  text="◦ {detailsModel>}"
+                                                  wrapping="true"
+                                                  renderWhitespace="true"
+                                                  textAlign="Initial"
+                                                  wrappingType="Hyphenated" />
+                                        </items>
+                                    </VBox>
+                                </VBox>
+                            </items>
+                        </VBox>
+                    </Panel>
+                </l:SplitPane>
+            </l:PaneContainer>
+        </l:PaneContainer>
+    </l:ResponsiveSplitter>
+</mvc:View>

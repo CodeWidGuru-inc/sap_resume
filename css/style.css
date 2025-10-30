@@ -1,0 +1,103 @@
+body { 
+    font-family: "72", Arial, sans-serif; 
+}
+
+.customSwitch.sapMSwtOn .sapMSwtHandle:before {
+  content: "\e065"; /* Sun icon (sap-icon://lightbulb) */
+  font-family: "SAP-icons";
+}
+
+.customSwitch.sapMSwtOff .sapMSwtHandle:before {
+  content: "\e02f"; /* Moon icon (sap-icon://bed) */
+  font-family: "SAP-icons";
+}
+
+.skillHeaderTextClass {
+        font-size: 1px;
+        font-weight: bolder;
+        text-align: center;
+    }
+.bulletPoint {
+  text-indent: -10px;
+  text-align: justify;
+}
+.subBulletPoint {
+  padding-left: 30px;
+  text-indent: -10px;
+  padding-top: 0%;
+  text-align: justify;
+}    
+.roleText {
+  padding-left: 2.5rem;   /*39px*/
+  text-indent: -2.5rem;   /*-39px*/
+}
+
+.clientText {
+  padding-left: 3rem;   
+  text-indent: -3rem;   
+}
+
+.textJustify {
+  text-align: justify;
+}
+
+.logo {
+  width: 130px;
+  height: 75px;
+  object-fit: contain;
+
+}
+
+.clientlogo {
+  width: 130px;
+  height: 75px;
+  object-fit: contain;
+}
+
+/* Begin of Panel Header Styles */
+/* .softSkillPanel {
+    background-color: burlywood;
+    box-shadow: 2px 2px 5px rgb(100, 70, 70);
+} */
+ /* .sapMPanel .sapMPanelHeadingDiv>.sapMPanelHdr, .sapMPanelWrappingDiv, .sapMPanelWrappingDivTb {
+    border-bottom: .0625rem solid #a8b3bd;
+    background: #7db1dc40; 
+}*/
+
+ .sapMPanel .sapMPanelHeadingDiv>.sapMPanelHdr {
+    border-bottom: .0625rem solid #a8b3bd;
+    background: #7db1dc40;
+ }
+ /* End of Panel Header Styles */
+.Certifications {
+  width: auto;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+}
+.certItems {
+  width: 15rem;
+}
+
+.Cert_image {
+  width: 250px;
+  height: 200px;
+  border-radius: 5px;
+  object-fit: contain;
+}
+
+.project_text {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.buttonClass {
+    margin-right: 10px;
+}
+.download .sapMBtnInner.sapMBtnText {
+    margin-right: 10px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
