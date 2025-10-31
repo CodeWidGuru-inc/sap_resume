@@ -19,6 +19,11 @@ sap.ui.define([
       window.open(sUrl, "_blank");
     },
 
+    ongitPress: function() {
+      var msg = "Coming Soon!";
+      alert(msg);
+    },
+
     home: function() {
       // Get the reference to the Skills IconFilter
       var oSkillsTab = this.byId("iconTabBar");
