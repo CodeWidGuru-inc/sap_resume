@@ -21,7 +21,7 @@
 
   { "type": "module", "name": "MM", "level": "Advanced" },
   { "type": "module", "name": "SD", "level": "Advanced" },
-  { "type": "module", "name": "LE", "level": "Advanced" },
+  { "type": "module", "name": "TM", "level": "Advanced" },
   { "type": "module", "name": "FI", "level": "Intermediate" },
   { "type": "module", "name": "PLM", "level": "Intermediate" },
 
