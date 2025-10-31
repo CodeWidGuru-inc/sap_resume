@@ -31,12 +31,11 @@
   { "type": "soft", "name": "Team Collaboration", "level": "Advanced" },
   { "type": "soft", "name": "Adaptability", "level": "Intermediate" },
   { "type": "soft", "name": "Leadership", "level": "Beginner" },
-  { "type": "soft", "name": "Creativity", "level": "Intermediate" },
   { "type": "soft", "name": "Critical Thinking", "level": "Advanced" },
   { "type": "soft", "name": "Conflict Resolution", "level": "Beginner" },
   { "type": "soft", "name": "Presentation Skills", "level": "Intermediate" },
   { "type": "soft", "name": "Interpersonal Skills", "level": "Advanced" },
   { "type": "soft", "name": "Multitasking", "level": "Intermediate" },
   { "type": "soft", "name": "Self-Motivation", "level": "Advanced" },
-  { "type": "soft", "name": "Mentoring & Coaching", "level": "Beginner" }
+  { "type": "soft", "name": "Mentoring", "level": "Intermediate" }
 ]
