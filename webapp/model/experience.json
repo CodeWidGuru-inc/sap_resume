@@ -22,7 +22,7 @@
                "Automating Mass Sales Order creation by Custom program using BAPI",
                "Mass Cancellation of Billing documents which uses CDS to determine relevant documents and exposing the program as a Transactional Fiori Application",
                "Enhancing custom UI5 application for feature addition",
-               "Updating Sales Document Flow to show customer required complex additional documents for client specific processes for better process trackability",
+               "Updating Sales Document Flow to show customer required complex additional documents for client specific processes for better process traceability",
                "Automatic Reversal process and invoice cancellation based on user actions in standard programs as per requirement",
                "Automating complex client specific Delivery process (PGI, User status change, BR creation, Sales Document Flow update) by implementing several enhancements of standard programs",
                "Creation of custom format business reports which need to be downloaded as excel using xml transformations and enhancing existing transformations as per requirement",
@@ -45,7 +45,7 @@
     "details": ["Designed and implemented CDS views using Associations, joins, Parameters",
                 "Developed and Enhanced Odata service methods as per requirements",
                 "Implemented custom validations and custom error handling messages to be shown in Manage Product Master Fiori App",
-                "Develped custom report and exposing it as a transactional Fiori App",
+                "Developed custom report and exposing it as a transactional Fiori App",
                 "Coordinating with client users and business and proposing technical solution for requirements",
                 "Debugging for analysis, solution proposals and Bug fixes"]
   },
