@@ -30,7 +30,6 @@ I thrive on building reproducible, interview-ready portfolio projects that demon
 - SAPUI5 + Fiori
 - ABAP + RAP + CAPM
 - GitHub Actions + GitHub Pages
-- DNS configuration via ProFreeHost VistaPanel
 - Custom domain: `guruteja.chilukoti.sap.unaux.com`
 
 ---
