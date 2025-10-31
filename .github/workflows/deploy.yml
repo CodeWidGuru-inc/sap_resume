@@ -39,3 +39,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
           publish_branch: gh-pages
+      
+      - name: Show deployment domain
+        run: echo "Deploying to https://guruteja.chilukoti.sap.unaux.com"
+
