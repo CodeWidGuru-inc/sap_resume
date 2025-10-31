@@ -21,7 +21,7 @@ sap.ui.define([
 
     ongitPress: function() {
       var msg = "Coming Soon!";
-      alert(msg);
+      sap.m.MessageToast.show(msg);
     },
 
     home: function() {
