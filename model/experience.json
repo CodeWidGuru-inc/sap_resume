@@ -33,6 +33,7 @@
                "Coordinating with new joiners for easier onboarding into the project and system environment"
               ]
   },
+
   { "id": "Accenture",
     "logo": "images/accenture_logo.png",
     "logo_client": "images/Loreal_logo.png",
@@ -48,6 +49,7 @@
                 "Coordinating with client users and business and proposing technical solution for requirements",
                 "Debugging for analysis, solution proposals and Bug fixes"]
   },
+  
   { "id": "Infosys",
     "logo": "images/Infosys_logo.png",
     "logo_client": "images/Unilever_logo.png",
