@@ -1,6 +1,6 @@
 # SAP Full Stack Developer Portfolio
 
-Welcome to my professional portfolio — a showcase of my hands-on expertise in SAP development, full-stack integration, and deployment workflows. This site is built with SAPUI5 and deployed via GitHub Pages using a custom domain: [guruteja.chilukoti.sap.unaux.com](https://guruteja.chilukoti.sap.unaux.com)
+Welcome to my professional portfolio — a showcase of my hands-on expertise in SAP development, full-stack integration, and deployment workflows. This site is built with SAPUI5 and deployed using a custom domain: [guruteja.chilukoti.sap.unaux.com](https://guruteja.chilukoti.sap.unaux.com)
 
 ---
 
