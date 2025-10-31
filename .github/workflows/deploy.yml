@@ -30,16 +30,13 @@ jobs:
       - name: Build SAPUI5 project
         run: ui5 build --all
 
-      - name: Copy CNAME file
+      - name: Copy CNAME file to dist
         run: cp CNAME dist/
 
-      - name: Deploy to gh-pages branch
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
           publish_branch: gh-pages
-      
-      - name: Show deployment domain
-        run: echo "Deploying to https://guruteja.chilukoti.sap.unaux.com"
-
+          cname: guruteja.chilukoti.sap.unaux.com
