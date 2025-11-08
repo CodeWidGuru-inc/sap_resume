@@ -30,7 +30,7 @@ I thrive on building reproducible, interview-ready portfolio projects that demon
 - SAPUI5 + Fiori
 - ABAP + RAP + CAPM
 - GitHub Actions + GitHub Pages
-- Custom domain: `guruteja.chilukoti.sap.unaux.com`
+- Custom domain.
 
 ---
 
@@ -38,7 +38,6 @@ I thrive on building reproducible, interview-ready portfolio projects that demon
 
 This site is deployed using a custom GitHub Actions workflow:
 - Builds SAPUI5 project into `/dist`
-- Copies `CNAME` for custom domain
 - Pushes to `gh-pages` branch
 - GitHub Pages serves from `gh-pages` root
 
