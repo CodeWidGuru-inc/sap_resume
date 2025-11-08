@@ -1,4 +1,23 @@
 [
+  { "id": "Wipro",
+    "logo": "images/wipro_logo.png",
+    "logo_client": "images/sipchem_logo.png",
+    "company": "WIPRO Ltd.",
+    "client":  "SIPCHEM",
+    "role": "Consultant",
+    "duration": "July 2024 - November 2024",
+    "Project Description": "Sahara International Petrochemical Company, is a Saudi Arabian petrochemical manufacturer. It produces and markets a variety of products, including methanol, polymers, and other chemicals, serving industries like construction, automotive, and pharmaceuticals. It also has a trading and marketing subsidiary SIPCHEM EUROPE SA. They needed a Digital Transformation in their SAP landscape utilizing RISE with SAP, incorporating SAP’s clean core principles",
+    "details": ["Created Odata service for journal entry reversal using BAPI_ACC_DOCUMENT_REV_POST which gets triggered when request from service now is pushed to SAP system and the odata service should provide a confirmation response post successful completion", 
+               "Worked on existing Vendor Balance Confirmation report for Internal form & Auditor Form. On the basis of the user type one of these need to be generated and sent as an email using the existing utility classes.",
+               "Created Odata service used for Asset creation using BAPI_FIXEDASSET_CREATE1 when a request is raised in service now.", 
+               "Worked on creation of Custom Loan, precious Lease reports programs for complex business needs.", 
+               "Developed adobe form of Delivery note with details of shipping related details and conditions, material classification, weight and volume along with section for acknowledgement of receipt of goods confirmation signature list. Added the report as an output type that gets triggered during PGI", 
+               "Provided support working with cross functional teams during the integration testing. Debugging issues of P2, P3 and providing quick fixes, solutions and workarounds during warranty phase.", 
+               "Documentation of the technical objects along with business requirements and provided peer code review", 
+               "Coordinated with cross functional teams to deliver high-quality software solutions." 
+              ]
+  },
+
   { "id": "Accenture",
     "logo": "images/accenture_logo.png",
     "logo_client": "images/telia_logo.png",
