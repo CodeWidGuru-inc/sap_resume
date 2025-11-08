@@ -72,8 +72,10 @@
                                             <Label text=""
                                                    width="100%" />
                                         </VBox>
+                                        <VBox>
                                         <Image class="clientlogo"
                                                src="{Experience>logo_client}" />
+                                        </VBox>       
                                     </FlexBox>
                                     <HBox>
                                         <tnt:InfoLabel text="Project Description - " />

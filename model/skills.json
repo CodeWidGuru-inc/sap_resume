@@ -2,7 +2,7 @@
   { "type": "technical", "name": "SAPUI5 / Fiori", "level": "Intermediate" },
   { "type": "technical", "name": "ABAP on S4HANA", "level": "Advanced" },
   { "type": "technical", "name": "RICEF & OOPS", "level": "Advanced" },
-  { "type": "technical", "name": "ABAP RESTful Programming Model", "level": "Intermediate" },
+  { "type": "technical", "name": "ABAP RAP", "level": "Intermediate" },
   { "type": "technical", "name": "Node.js", "level": "Intermediate" },
   { "type": "technical", "name": "JavaScript", "level": "Intermediate" },
   { "type": "technical", "name": "HTML5 & CSS3", "level": "Advanced" },
@@ -21,7 +21,7 @@
 
   { "type": "module", "name": "MM", "level": "Advanced" },
   { "type": "module", "name": "SD", "level": "Advanced" },
-  { "type": "module", "name": "TM", "level": "Advanced" },
+  { "type": "module", "name": "TM", "level": "Intermediate" },
   { "type": "module", "name": "FI", "level": "Intermediate" },
   { "type": "module", "name": "PLM", "level": "Intermediate" },
 
