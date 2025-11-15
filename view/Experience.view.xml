@@ -47,20 +47,27 @@
                         <f:GridList id="ExperienceList"
                                     items="{Experience>/}">
                             <f:customLayout>
-                                <cssgrid:GridBoxLayout xmlns:cssgrid="sap.ui.layout.cssgrid"
+                                <cssgrid:GridBoxLayout xmlns:cssgrid="sap.ui.layout.cssgrid" 
                                                        boxesPerRowConfig="XL1 L1 M1 S1" />
                             </f:customLayout>
                             <f:GridListItem type="Active"
                                             press="onPress">
                                 <VBox class="sapUiSmallMargin">
-                                    <FlexBox justifyContent="SpaceBetween"
-                                             alignItems="Center"
-                                             direction="Row">
-                                        <VBox>
+                                    <FlexBox justifyContent="Center" alignItems="Center"
+                                             direction="Row" renderType="Div">
+                                        <VBox width="100%">
+                                            <layoutData>
+                                            <FlexItemData growFactor="1" />
+                                            </layoutData>
+
                                             <Image class="logo"
                                                    src="{Experience>logo}" />
                                         </VBox>
-                                        <VBox>
+                                        <VBox width="100%" justifyContent="Center" alignItems="Start">
+                                            <layoutData>
+                                            <FlexItemData growFactor="2" />
+                                            </layoutData>
+
                                             <Title text="{Experience>company}"
                                                    wrapping="true" />
                                             <Label class="clientText" text="Client - {Experience>client}"
@@ -72,8 +79,11 @@
                                             <Label text=""
                                                    width="100%" />
                                         </VBox>
-                                        <VBox>
-                                        <Image class="clientlogo"
+                                        <VBox width="100%">
+                                            <layoutData>
+                                            <FlexItemData growFactor="1"/>
+                                            </layoutData>
+                                            <Image class="clientlogo"
                                                src="{Experience>logo_client}" />
                                         </VBox>       
                                     </FlexBox>
@@ -93,7 +103,7 @@
             <l:PaneContainer orientation="Vertical">
                 <l:SplitPane requiredParentWidth="600">
                     <l:layoutData>
-                        <l:SplitterLayoutData size="auto" />
+                        <l:SplitterLayoutData size="auto"/>
                     </l:layoutData>
                     <Panel stickyHeader="true"
                            headerText="Experience Details"
