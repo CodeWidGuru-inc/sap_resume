@@ -6,7 +6,7 @@ Welcome to my professional portfolio — a showcase of my hands-on expertise in 
 
 ## 🧠 About Me
 
-I'm a driven and detail-obsessed SAP developer with deep experience in:
+I'm a driven and detail-obsessed SAP developer with experience in:
 - 🔧 SAP RAP (ABAP RESTful Application Programming Model)
 - 🧩 CAPM (Cloud Application Programming Model)
 - 🌐 Full-stack integration with BAPI, CDS, EML, BDL, and Fiori

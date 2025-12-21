@@ -11,6 +11,7 @@
   { "type": "technical", "name": "OData & CDS", "level": "Advanced" },
   { "type": "technical", "name": "SAP BTP", "level": "Intermediate" },
   { "type": "technical", "name": "CAPM", "level": "Beginner" },
+  { "type": "technical", "name": "Prompt Engineering", "level": "Intermediate" },
 
   { "type": "tools", "name": "Eclipse ADT", "level": "Advanced" },
   { "type": "tools", "name": "SAP BAS", "level": "Intermediate" },
@@ -18,6 +19,10 @@
   { "type": "tools", "name": "SAP Web IDE", "level": "Intermediate" },
   { "type": "tools", "name": "Visual Studio Code", "level": "Intermediate" },
   { "type": "tools", "name": "Postman", "level": "Intermediate" },
+
+  { "type": "AI", "name": "Copilot", "level": "Intermediate" },
+  { "type": "AI", "name": "WindSurf", "level": "Intermediate" },
+  { "type": "AI", "name": "Joule", "level": "Beginner" },
 
   { "type": "module", "name": "MM", "level": "Advanced" },
   { "type": "module", "name": "SD", "level": "Advanced" },
