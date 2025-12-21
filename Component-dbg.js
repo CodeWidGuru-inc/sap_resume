@@ -18,6 +18,7 @@ sap.ui.define([
 
       // Filter arrays for each skill type
       var aTech = aSkills.filter(function(item) { return item.type === "technical"; });
+      var aAI = aSkills.filter(function(item) { return item.type === "AI"; });
       var aTools = aSkills.filter(function(item) { return item.type === "tools"; });
       var aMod = aSkills.filter(function(item) { return item.type === "module"; });
       var aSoft = aSkills.filter(function(item) { return item.type === "soft"; });
@@ -26,6 +27,7 @@ sap.ui.define([
       this.setModel(new sap.ui.model.json.JSONModel(aTech), "techSkills");
       this.setModel(new sap.ui.model.json.JSONModel(aTools), "toolSkills");
       this.setModel(new sap.ui.model.json.JSONModel(aMod), "modSkills");
+      this.setModel(new sap.ui.model.json.JSONModel(aAI), "aiSkills");
       this.setModel(new sap.ui.model.json.JSONModel(aSoft), "softSkills");
       }.bind(this));
       //End---------------Skills Model---------------

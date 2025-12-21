@@ -79,6 +79,29 @@
                     </f:GridListItem>
                 </f:GridList>
             </Panel>
+            <Panel id="aiSkillList"
+                   backgroundDesign="Transparent"
+                   headerText="AI Tools">
+                <f:GridList id="gridaiList"
+                            class="skillHeaderTextClass"
+                            items="{aiSkills>/}">
+                    <f:customLayout>
+                        <grid:GridBoxLayout boxMinWidth="10rem" />
+                    </f:customLayout>
+                    <f:GridListItem>
+                        <VBox class="sapUiSmallMargin">
+                            <layoutData>
+                                <FlexItemData growFactor="1"
+                                              shrinkFactor="0" />
+                            </layoutData>
+                            <Title text="{aiSkills>name}"
+                                   wrapping="true" />
+                            <Label text="{aiSkills>level}"
+                                   wrapping="true" />
+                        </VBox>
+                    </f:GridListItem>
+                </f:GridList>
+            </Panel>
             <Panel id="softSkillList"
                    backgroundDesign="Transparent"
                    headerText="Power Skills"
