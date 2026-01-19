@@ -1,6 +1,26 @@
 [
   { "id": "Wipro",
     "logo": "images/wipro_logo.png",
+    "logo_client": "images/Apple_logo.png",
+    "company": "WIPRO Ltd.",
+    "client":  "APPLE INC.",
+    "role": "Consultant",
+    "duration": "November 2024 - Present",
+    "Project Description": "Apple Inc. is an American multinational technology company, known for its consumer electronics, software and online services. Apple's product lineup includes portable and home hardware like the iPhone, iPad, Apple Watch, Mac, and Apple TV; and various software and services including Apple Pay and iCloud, as well as subscription based streaming services like Apple Music and Apple TV. They needed a Digital Transformation and Migration from their existing legacy SAP ECC to the latest S/4 HANA landscape for leveraging the capabilities for a more robust and efficient supply chain, resources and planning. Being considered as one of the biggest Digital Transformation Projects in the world.",
+    "details": ["Code Remediation on RICEF objects for S/4 HANA Migration, ATC fixes, Code Vulnerability fixes. Proactively identified potential failures and provided fixes for the same (sy-dbcount logic failure, BDC failure for VL02N serialization SNOTE – 3661899 etc).", 
+               "Performance tuning and analysis with fixes using code pushdown techniques for improved overall performance in few instances up to 95% lower processing time and resource utilization.",
+               "POC on RAP application utilizing BTP cloud connectors and external API call using consumption model.", 
+               "Developed feature addition to programs utilizing SPTA framework and in some cases use standard parallel processing using NEW TASK and manually handling thread utilization using parallel generators", 
+               "Functionality implementations for Custom free style Ui5 application using BAS and git for version control.", 
+               "Providing peer review lowering cases of rework and retest confirmation, resulting in effective sprint cycles delivering targets with minimal bottle necks.", 
+               "Go-Live cutover activities, post go-live warranty support, tickets handling, bug fixes and support.", 
+               "Mentoring junior developers with the ways of workings and KT sessions for smooth delegation of work all while coordinating with leads and onsite team.",
+               "Worked at client location in a client facing role, building rapport and increased collaboration with cross functional and multi-cultural teams while adhering to agile methodologies." 
+              ]
+  },
+
+  { "id": "Wipro",
+    "logo": "images/wipro_logo.png",
     "logo_client": "images/sipchem_logo.png",
     "company": "WIPRO Ltd.",
     "client":  "SIPCHEM",
