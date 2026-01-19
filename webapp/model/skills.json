@@ -11,6 +11,7 @@
   { "type": "technical", "name": "OData & CDS", "level": "Advanced" },
   { "type": "technical", "name": "SAP BTP", "level": "Intermediate" },
   { "type": "technical", "name": "CAPM", "level": "Beginner" },
+  { "type": "technical", "name": "Python", "level": "Intermediate" },
   { "type": "technical", "name": "Prompt Engineering", "level": "Intermediate" },
 
   { "type": "tools", "name": "Eclipse ADT", "level": "Advanced" },
