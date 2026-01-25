@@ -4,16 +4,31 @@ sap.ui.define([
   "use strict";
   return Controller.extend("SapDevPortfolio.controller.Projects", {
 
-    onInit: function () { 
-      if (this.getView().byId("prj_exist")) {
+    onAfterRendering: function () { 
+      var oModel = this.getView().getModel("projects");
+      var oData = oModel.getData();
+
+      if (oData.length == 0) {
+        for (var i = 0; i < 10; i++) {
+          var ctrl = this.getView().byId("if_No_project_" + i.toString().padStart(3, "0"));
+          if (ctrl) {
+              console.log("Found:", ctrl.getId());
+              ctrl.setVisible(true);
+          }
+        }
+        var prj = this.getView().byId("projList");
+        prj.setVisible(false);        
+      } else {
         for (var i = 0; i < 10; i++) {
           var ctrl = this.getView().byId("if_No_project_" + i.toString().padStart(3, "0"));
           if (ctrl) {
               console.log("Found:", ctrl.getId());
               ctrl.setVisible(false);
           }
-        }        
-      }            
+        }
+        var prj = this.getView().byId("projList");
+        prj.setVisible(true);         
+      }           
     },
 
     onPress : function(oEvent) {
