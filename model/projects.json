@@ -1,14 +1,10 @@
 [
   {
-    "title": "SAP Fiori Launchpad Extension",
-    "description": "Extended Fiori Launchpad with custom tiles and analytics.",
-    "tech": "SAPUI5, OData, Fiori Elements",
-    "image": "images/project1.png"
-  },
-  {
-    "title": "CAP-based Inventory App",
-    "description": "Built a full-stack inventory management app using CAP and SAPUI5.",
-    "tech": "CAP, Node.js, SAPUI5, CDS",
-    "image": "images/project2.png"
+    "title": "Airplane Travel Booking App",
+    "description": "RAP based Airplane Travel Booking application using ABAP Cloud Project, ABAP GIT for version control, BAS for Fiori Elements and Cloud Foundry Deployment.",
+    "tech": "ABAP on Cloud, RAP, S4-HANA, CDS, Fiori Elements",
+    "image": "images/ABAP_RAP.png",
+    "url": "https://302ba387-5fca-4464-ab22-8b974aaf9399.abap-web.ap21.hana.ondemand.com/sap/bc/ui5_ui5/sap/zflightrapapp/index.html"
   }
+
 ]

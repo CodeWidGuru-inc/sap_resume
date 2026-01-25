@@ -39,6 +39,7 @@ body {
 
 .textJustify {
   text-align: justify;
+  padding-left: 0.5rem;
 }
 
 .logo {

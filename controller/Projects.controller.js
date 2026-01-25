@@ -1,2 +1,2 @@
-sap.ui.define(["sap/ui/core/mvc/Controller"],function(e){"use strict";return e.extend("SapDevPortfolio.controller.Projects",{})});
+sap.ui.define(["sap/ui/core/mvc/Controller"],function(e){"use strict";return e.extend("SapDevPortfolio.controller.Projects",{onInit:function(){if(this.getView().byId("prj_exist")){for(var e=0;e<10;e++){var t=this.getView().byId("if_No_project_"+e.toString().padStart(3,"0"));if(t){console.log("Found:",t.getId());t.setVisible(false)}}}},onPress:function(e){var t=e.getSource();var o=t.getBindingContext("projects");var r=o.getObject();var i=r.url;window.open(i,"_blank")}})});
 //# sourceMappingURL=Projects.controller.js.map

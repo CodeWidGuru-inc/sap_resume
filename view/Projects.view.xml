@@ -1,13 +1,52 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <mvc:View controllerName="SapDevPortfolio.controller.Projects"
+          xmlns:tnt="sap.tnt"
           xmlns:mvc="sap.ui.core.mvc"
-          xmlns="sap.m">
-    <Panel height="60vh">
+          xmlns="sap.m"
+          xmlns:core="sap.ui.core"
+          xmlns:html="sap.ui.core.HTML"
+          xmlns:l="sap.ui.layout"
+          xmlns:grid="sap.ui.layout.cssgrid"
+          xmlns:f="sap.f">
+    <Panel id="project_list" height="50vh" backgroundDesign="Transparent">
         <VBox class="sapUiSmallMargin Certifications">
-            <Image class="Cert_image"
+            <Image id="if_No_project_000" class="Cert_image"
                    src="images/Work_in_progress.png" />
-            <Text text="Work-In-Progress"
+            <Text id="if_No_project_001" text="Work-In-Progress"
                   class="project_text" />
+
+            <f:GridList id="projList"
+                    items="{projects>/}">
+            <f:customLayout>
+                <grid:ResponsiveColumnLayout />
+            </f:customLayout>
+            <f:GridListItem class="prjItems"
+                            type="Active"
+                            press="onPress">
+                <f:layoutData>
+                    <grid:ResponsiveColumnItemLayoutData columns="5" />
+                </f:layoutData>
+                <VBox class="sapUiSmallMargin " height="auto">
+                    <layoutData>
+                        <FlexItemData growFactor="1"
+                                      shrinkFactor="0" />
+                    </layoutData>
+                    <HBox width="auto">
+                        <Image id = "prj_exist" class="logo" src="{projects>image}" />
+                        <VBox >
+                            <Title text="{projects>title}" wrapping="true" /> 
+                            <HBox >
+                                <tnt:InfoLabel text="Description -" />
+                                <Text class="textJustify"
+                                        text="{projects>description}"
+                                        wrapping="true"
+                                        wrappingType="Hyphenated" />
+                            </HBox>
+                        </VBox>
+                    </HBox>
+                </VBox>
+            </f:GridListItem>
+            </f:GridList>
         </VBox>
     </Panel>
 </mvc:View>
