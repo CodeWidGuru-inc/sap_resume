@@ -32,6 +32,7 @@ sap.ui.define([
       }.bind(this));
       //End---------------Skills Model---------------
 
+      //Begin-------------Projects Model---------------
       var oProjects = new JSONModel("model/projects.json");
       this.setModel(oProjects, "projects");
 
