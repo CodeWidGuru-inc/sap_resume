@@ -105,7 +105,8 @@
                                 text="Download Resume"
                                 iconFirst="true"
                                 icon="sap-icon://download"
-                                type="Success" />
+                                type="Success" 
+                                press="download_resume"/>
                     </OverflowToolbar>
                 </footer>
             </Page>
