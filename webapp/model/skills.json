@@ -15,8 +15,8 @@
   { "type": "technical", "name": "Prompt Engineering", "level": "Intermediate" },
 
   { "type": "tools", "name": "Eclipse ADT", "level": "Advanced" },
-  { "type": "tools", "name": "SAP BAS", "level": "Intermediate" },
   { "type": "tools", "name": "SAP GUI", "level": "Advanced" },
+  { "type": "tools", "name": "SAP BAS", "level": "Intermediate" },
   { "type": "tools", "name": "SAP Web IDE", "level": "Intermediate" },
   { "type": "tools", "name": "Visual Studio Code", "level": "Intermediate" },
   { "type": "tools", "name": "Postman", "level": "Intermediate" },

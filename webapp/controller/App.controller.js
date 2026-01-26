@@ -24,6 +24,11 @@ sap.ui.define([
       sap.m.MessageToast.show(msg);
     },
 
+    download_resume: function() {
+      var sUrl = "assets/Guruteja_Chilukoti_Resume_7.5yrs.pdf";
+      window.open(sUrl, "_blank");
+    },
+
     home: function() {
       // Get the reference to the Skills IconFilter
       var oSkillsTab = this.byId("iconTabBar");
