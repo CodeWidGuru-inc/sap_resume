@@ -5,7 +5,7 @@
   "scripts": {
     "start": "ui5 serve -o index.html",
     "build": "ui5 build",
-    "build": "[my-framework] build --output public"
+    "build": "ui5 build --output public"
     "lint": "eslint ./webapp",
     "format": "prettier --write ./webapp"
   },
