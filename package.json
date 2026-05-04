@@ -4,7 +4,7 @@
   "description": "SAP Full Stack Developer Portfolio Website",
   "scripts": {
     "start": "ui5 serve -o index.html",
-    "build": "ui5 build",
+    "build": "ui5 build --output public",
     "lint": "eslint ./webapp",
     "format": "prettier --write ./webapp"
   },
